@@ -1,12 +1,12 @@
 {% comment %}
 @param layout {String}
-  The header layout setting: can be one of normal, expanded, minimal, minimal-sticky
+The header layout setting: can be one of normal, expanded, minimal, minimal-sticky
 
 @param logoCentered {Boolean}
-  Whether the logo should be centered
+Whether the logo should be centered
 
 @param cartIcon {String}
-  The setting indicating which icon should be used for the cart. Can be one of: bag, cart
+The setting indicating which icon should be used for the cart. Can be one of: bag, cart
 {% endcomment %}
 
 {% assign type = 'header-minimal' %}
@@ -34,8 +34,7 @@
           aria-haspopup="true"
           aria-controls="main-header--mobile-nav"
           aria-expanded="false"
-          aria-label="{{ linklists[section.settings.menu].title }}"
-        >
+          aria-label="{{ linklists[section.settings.menu].title }}">
           {% render 'icon' with 'menu' %}
         </a>
 
@@ -53,17 +52,16 @@
         {% endif %}
 
         {%
-          render 'live-search',
-          show_label: section.settings.show-labels,
-          alignment: alignment,
-        %}
+           render 'live-search',
+           show_label: section.settings.show-labels,
+           alignment: alignment, %}
       </div>
 
-    {% unless type == 'header-minimal' %}
-    </div>
+      {% unless type == 'header-minimal' %}
+      </div>
 
-    <div class="main-header--tools-right">
-    {% endunless %}
+      <div class="main-header--tools-right">
+      {% endunless %}
       <div class="tool-container">
         {% unless type == 'header-minimal' %}
           {% if section.settings.social-icons %}
@@ -73,7 +71,10 @@
 
         {% if shop.customer_accounts_enabled %}
           {% if customer %}
-            <a class="account-options" href="{{ routes.account_url }}" aria-label="{{ 'general.account' | t }}">
+            <a
+              class="account-options"
+              href="{{ routes.account_url }}"
+              aria-label="{{ 'general.account' | t }}">
               {% render 'icon' with 'person' %}
 
               <label class="main-header--tools-label">
@@ -81,7 +82,10 @@
               </label>
             </a>
           {% else %}
-            <a class="account-options" href="{{ routes.account_login_url }}" aria-label="{{ 'layout.header.login' | t }}">
+            <a
+              class="account-options"
+              href="{{ routes.account_login_url }}"
+              aria-label="{{ 'layout.header.login' | t }}">
               {% render 'icon' with 'person' %}
 
               {% if section.settings.show-labels %}
@@ -96,14 +100,17 @@
         <button
           class="mini-cart-wrap mini-cart-wrap--no-js-hidden"
           aria-label="mini-cart-toggle"
-          data-cart-mini-toggle
-        >
-          <span class="item-count" data-cart-mini-count>{%- if cart.item_count != 0 -%}{{- cart.item_count -}}{%- endif -%}</span> /cart
+          data-cart-mini-toggle>
+          <span class="item-count" data-cart-mini-count>
+            {%- if cart.item_count != 0 -%}
+              {{- cart.item_count -}}{%- endif -%}
+          </span>
+          //cart
 
           <!-- {% if cartIcon == "cart" %}
-            {% render 'icon' with 'cart' %}
+          {% render 'icon' with 'cart' %}
           {% else %}
-            {% render 'icon' with 'bag' %}
+          {% render 'icon' with 'bag' %}
           {% endif %} -->
         </button>
 
