@@ -42,7 +42,7 @@
     color: white;
   }
 
-  @media only screen and (max-width: 700px) {
+  @media(max-width: 700px) {
     .one-half-column.left, .one-half-column.right, {
       float: none;
       width: 100%;
@@ -65,10 +65,10 @@
   {%- if left_image != blank -%}
     {%
        render 'rimg'
-       img: left_image,
-       alt: 'Left Image',
-       size: '1024x1024',
-       lazy: true %}
+     img: left_image,
+     alt: 'Left Image',
+     size: '1024x1024',
+     lazy: true %}
   {%- else -%}
     {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
   {%- endif -%}
@@ -78,10 +78,10 @@
   {%- if right_image != blank -%}
     {%
        render 'rimg'
-       img: right_image,
-       alt: 'Right Image',
-       size: '1024x1024',
-       lazy: true %}
+     img: right_image,
+     alt: 'Right Image',
+     size: '1024x1024',
+     lazy: true %}
   {%- else -%}
     {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
   {%- endif -%}
