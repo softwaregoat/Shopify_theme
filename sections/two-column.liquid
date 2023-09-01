@@ -4,53 +4,51 @@
     display: inline-block;
   }
 
-  .one-half-column img{
-      display: block;
-      width: 100%;
-      max-height: 500px;
+  .one-half-column img {
+    display: block;
+    width: 100%;
+    max-height: 500px;
   }
-  
+
   .one-half-column.left {
-    width:50%;
-    float:left;
+    width: 50%;
+    float: left;
   }
 
   .one-half-column.right {
-    width:50%;
-    float:right;
+    width: 50%;
+    float: right;
   }
 
   .overlay-content {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     /* background-color: #000;  */
-    color: #fff; 
-    padding: 10px 20px; 
-    font-size: 20px; 
-    text-align:left;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: left;
   }
 
-  .overlay-content a{
+  .overlay-content a {
     padding: 5px 20px;
     border-radius: 5px;
     border: 1px solid white;
     color: white;
   }
-  .overlay-content p{
+  .overlay-content p {
     color: white;
   }
 
-@media only screen and (max-width: 600px) {
-  .one-half-column.left, .one-half-column.right, 
-  {
-    float:none;
-    width:100%;
-    margin-right:0;
+  @media only screen and (max-width: 700px) {
+    .one-half-column.left, .one-half-column.right, {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+    }
   }
-}
-  
 </style>
 {%- assign left_image = section.settings.left_image -%}
 {%- assign left_text = section.settings.left_text -%}
@@ -63,125 +61,117 @@
 {%- assign right_link = section.settings.right_link -%}
 
 
-  {%- capture left_image_tag -%}
-    {%- if left_image != blank -%}
-      {%
-        render 'rimg'
-        img: left_image,
-        alt: 'Left Image',
-        size: '1024x1024',
-        lazy: true
-      %}
-    {%- else -%}
-      {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
-    {%- endif -%}
-  {%- endcapture -%}
+{%- capture left_image_tag -%}
+  {%- if left_image != blank -%}
+    {%
+       render 'rimg'
+       img: left_image,
+       alt: 'Left Image',
+       size: '1024x1024',
+       lazy: true %}
+  {%- else -%}
+    {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+{%- endcapture -%}
 
-  {%- capture right_image_tag -%}
-    {%- if right_image != blank -%}
-      {%
-        render 'rimg'
-        img: right_image,
-        alt: 'Right Image',
-        size: '1024x1024',
-        lazy: true
-      %}
-    {%- else -%}
-      {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
-    {%- endif -%}
-  {%- endcapture -%}
+{%- capture right_image_tag -%}
+  {%- if right_image != blank -%}
+    {%
+       render 'rimg'
+       img: right_image,
+       alt: 'Right Image',
+       size: '1024x1024',
+       lazy: true %}
+  {%- else -%}
+    {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+{%- endcapture -%}
 
-  {% assign placeholder_style = 'collection-2' %}
-  {% assign color = settings.accent-colour %}
-  {% assign color_string = 'fill="' | append: color | append: '" xmlns' %}
-  {% capture demo_image %}{%- render 'placeholder_svg_uri', placeholder: placeholder_style, color_string: color_string -%}{% endcapture %}
+{% assign placeholder_style = 'collection-2' %}
+{% assign color = settings.accent-colour %}
+{% assign color_string = 'fill="' | append: color | append: '" xmlns' %}
+{% capture demo_image %}
+  {%- render 'placeholder_svg_uri', placeholder: placeholder_style, color_string: color_string -%}{% endcapture %}
 
-  <section class="home-section clearfix picture-block">
-    <div class="one-half-column left">
-      {{ left_image_tag }}
-      <div class="overlay-content">
-        <p>{{ left_text }}</p>
-        <div class="button-container">
-          <a href="/{{ left_link }}">{{ left_btn_text }}</a>
-        </div>
+<section class="home-section clearfix picture-block">
+  <div class="one-half-column left">
+    {{ left_image_tag }}
+    <div class="overlay-content">
+      <p>{{ left_text }}</p>
+      <div class="button-container">
+        <a href="/{{ left_link }}">{{ left_btn_text }}</a>
       </div>
     </div>
-  
-    <div class="one-half-column right">
-      {{ right_image_tag }}
-      <div class="overlay-content">
-        <p>{{ right_text }}</p>
-        <div class="button-container">
-          <a href="/{{ right_link }}">{{ right_btn_text }}</a>
-        </div>
+  </div>
+
+  <div class="one-half-column right">
+    {{ right_image_tag }}
+    <div class="overlay-content">
+      <p>{{ right_text }}</p>
+      <div class="button-container">
+        <a href="/{{ right_link }}">{{ right_btn_text }}</a>
       </div>
     </div>
-    
-    <br style="clear:both;" />
-  </section>
+  </div>
+
+  <br style="clear:both;" />
+</section>
 
 
 {% schema %}
-{
-  "name": "Two Columns",
-  "class": "shopify-section---two-columns",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "left_image",
-      "label": "Left Image"
-    },
-    {
-      "type": "textarea",
-      "id": "left_text",
-      "label": "Left Text",
-      "default": "Say a bit about your brand, a specific product, or promotion."
-    },
-    {
-      "type": "text",
-      "id": "left_btn_text",
-      "label": "Left Button Text",
-      "default": "Left Button Text"
-    },
-    {
-      "type": "url",
-      "id": "left_link",
-      "label": "Left Button link URL"
-    },
-    {
-      "type": "image_picker",
-      "id": "right_image",
-      "label": "Right Image"
-    },
-    {
-      "type": "textarea",
-      "id": "right_text",
-      "label": "Right Text",
-      "default": "Say a bit about your brand, a specific product, or promotion."
-    },
-    {
-      "type": "text",
-      "id": "right_btn_text",
-      "label": "Right Button Text",
-      "default": "Right Button Text"
-    },
-    {
-      "type": "url",
-      "id": "right_link",
-      "label": "Right Button link URL"
+  {
+    "name": "Two Columns",
+    "class": "shopify-section---two-columns",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "left_image",
+        "label": "Left Image"
+      },
+      {
+        "type": "textarea",
+        "id": "left_text",
+        "label": "Left Text",
+        "default": "Say a bit about your brand, a specific product, or promotion."
+      },
+      {
+        "type": "text",
+        "id": "left_btn_text",
+        "label": "Left Button Text",
+        "default": "Left Button Text"
+      },
+      {
+        "type": "url",
+        "id": "left_link",
+        "label": "Left Button link URL"
+      }, {
+        "type": "image_picker",
+        "id": "right_image",
+        "label": "Right Image"
+      }, {
+        "type": "textarea",
+        "id": "right_text",
+        "label": "Right Text",
+        "default": "Say a bit about your brand, a specific product, or promotion."
+      }, {
+        "type": "text",
+        "id": "right_btn_text",
+        "label": "Right Button Text",
+        "default": "Right Button Text"
+      }, {
+        "type": "url",
+        "id": "right_link",
+        "label": "Right Button link URL"
+      }
+    ],
+    "presets": [
+      {
+        "category": "Image",
+        "name": "Two Columns"
+      }
+    ],
+    "disabled_on": {
+      "groups": ["*"]
     }
-  ],
-  "presets": [
-    {
-      "category": "Image",
-      "name": "Two Columns"
-    }
-  ],
-  "disabled_on": {
-    "groups": [
-      "*"
-    ]
   }
-}
-
 {% endschema %}
