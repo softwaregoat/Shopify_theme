@@ -47,6 +47,42 @@
         "products_per_row": 3
       }
     },
+    "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b": {
+      "type": "dynamic-slideshow",
+      "blocks": {
+        "template--20719758541085__0b32ade9-3523-4ea4-bd43-5cb7f00dc50b-feature-1": {
+          "type": "feature",
+          "settings": {
+            "slide_title": "",
+            "caption": "Introduce customers to your shop with lifestyle imagery and product photography.",
+            "caption_color": "#FFFFFF",
+            "caption_size": 20,
+            "caption_font": "helvetica_n4",
+            "caption_line_height": 1,
+            "caption_rotation_angle": -90,
+            "button": "Your call to action button",
+            "button_color": "#FFFFFF",
+            "link": "",
+            "alignment": "center-center",
+            "show_overlay": false,
+            "background": "#000",
+            "opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--20719758541085__0b32ade9-3523-4ea4-bd43-5cb7f00dc50b-feature-1"
+      ],
+      "settings": {
+        "desktop_height": "natural",
+        "mobile_height": "natural",
+        "full-width": true,
+        "parallax": false,
+        "autoplay_enable": false,
+        "transition": "slide",
+        "autoplay_interval": 5
+      }
+    },
     "c9c8acb3-8ec6-4da0-8014-794963fdf847": {
       "type": "two-column",
       "custom_css": [
@@ -67,6 +103,7 @@
   "order": [
     "dynamic-slideshow-1",
     "eb5dcef8-60e9-435e-95ec-b72bf5ec1d69",
+    "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b",
     "c9c8acb3-8ec6-4da0-8014-794963fdf847"
   ]
 }
