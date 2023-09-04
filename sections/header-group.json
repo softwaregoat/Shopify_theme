@@ -5,7 +5,7 @@
     "announcement_bar": {
       "type": "pxs-announcement-bar",
       "custom_css": [
-        ".pxs-announcement-bar{height:35px}"
+
       ],
       "settings": {
         "show_announcement": true,
