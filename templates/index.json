@@ -53,19 +53,20 @@
         "template--20719758541085__0b32ade9-3523-4ea4-bd43-5cb7f00dc50b-feature-1": {
           "type": "feature",
           "settings": {
+            "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeperfume-1.jpg",
             "slide_title": "",
             "caption": "Introduce customers to your shop with lifestyle imagery and product photography.",
-            "caption_color": "#FFFFFF",
+            "caption_color": "#ffffff",
             "caption_size": 20,
             "caption_font": "helvetica_n4",
             "caption_line_height": 1,
             "caption_rotation_angle": -90,
             "button": "Your call to action button",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "link": "",
-            "alignment": "center-center",
+            "alignment": "left middle",
             "show_overlay": false,
-            "background": "#000",
+            "background": "#000000",
             "opacity": 20
           }
         }
@@ -74,10 +75,10 @@
         "template--20719758541085__0b32ade9-3523-4ea4-bd43-5cb7f00dc50b-feature-1"
       ],
       "settings": {
-        "desktop_height": "natural",
-        "mobile_height": "natural",
+        "desktop_height": "extra-large",
+        "mobile_height": "large",
         "full-width": true,
-        "parallax": false,
+        "parallax": true,
         "autoplay_enable": false,
         "transition": "slide",
         "autoplay_interval": 5
@@ -89,11 +90,11 @@
 
       ],
       "settings": {
-        "left_image": "shopify:\/\/shop_images\/N1-CONCRE-F1.jpg",
+        "left_image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeperfume-SX2.jpg",
         "left_text": "Say a bit about your brand, a specific product, or promotion.",
         "left_btn_text": "Left Button Text",
         "left_link": "shopify:\/\/products\/n1-concrete-eau-de-parfum-aged-12-weeks",
-        "right_image": "shopify:\/\/shop_images\/TONED-F1.jpg",
+        "right_image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeperfume-DX3.jpg",
         "right_text": "Say a bit about your brand, a specific product, or promotion.",
         "right_btn_text": "Right Button Text",
         "right_link": ""
