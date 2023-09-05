@@ -15,15 +15,40 @@
 %}
 
 <footer class="
-                  main-footer
-                  content-area
-                " id="main-footer">
-  <ul class="
-                    connect
-                    clearfix
-                    module-count-{{ footerModules }}
-                    ">
-    {% unless settings.twitter-url.size == 0 and
+                    main-footer
+                    content-area
+                  " id="main-footer">
+
+  <style>
+    .locale-selectors__container {
+      display: none;
+    }
+  </style>
+  <div class="sub-footer">
+    <div class="sub-footer__section--left">
+      {% if linklists.footer.links.size > 0 %}
+        <nav class="footer-nav">
+          <ul>
+            {% for link in linklists.footer.links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      {% endif %}
+
+      {% capture year %}
+        {{ "now" | date: "%Y" }}{% endcapture %}
+      <p>{{ 'layout.footer.copyright_text_html' | t: year: year }}<br>{{ powered_by_link }}</p>
+    </div>
+    <div class="sub-footer__section--right">
+      <ul class="
+                              connect
+                              clearfix
+                              module-count-{{ footerModules }}
+                              ">
+        {% unless settings.twitter-url.size == 0 and
  settings.facebook-url.size == 0 and
  settings.tiktok-url.size == 0 and
  settings.snapchat-url.size == 0 and
@@ -50,86 +75,61 @@
  settings.youtube-url.size == 0 and
  settings.vimeo-url.size == 0
  %}
-      <li class="social">
-        {% render 'social-links' %}
-      </li>
-    {% endunless %}
+          <li class="social">
+            {% render 'social-links' %}
+          </li>
+        {% endunless %}
 
-    {% if mailingList %}
-      <li class="newsletter">
-        <h2 class="title">
-          {{- 'layout.footer.newsletter_title' | t -}}
-        </h2>
+        {% if mailingList %}
+          <li class="newsletter">
+            <h2 class="title">
+              {{- 'layout.footer.newsletter_title' | t -}}
+            </h2>
 
-        {% form 'customer' %}
-          {% if form.posted_successfully? %}
-            <p class="alert-message success">
-              {{- 'layout.footer.success' | t -}}
-            </p>
-          {% elsif form.errors %}
-            {% for field in form.errors %}
-              <p class="alert-message error">
-                {{ 'contact.error' | t }}
-                {% if field == 'form' %}
-                  {{ form.errors.messages[field] }}
-                {% else %}
-                  {{ form.errors.translated_fields[field] }} - {{ form.errors.messages[field] }}
-                {% endif %}
-              </p>
-            {% endfor %}
-          {% endif %}
+            {% form 'customer' %}
+              {% if form.posted_successfully? %}
+                <p class="alert-message success">
+                  {{- 'layout.footer.success' | t -}}
+                </p>
+              {% elsif form.errors %}
+                {% for field in form.errors %}
+                  <p class="alert-message error">
+                    {{ 'contact.error' | t }}
+                    {% if field == 'form' %}
+                      {{ form.errors.messages[field] }}
+                    {% else %}
+                      {{ form.errors.translated_fields[field] }} - {{ form.errors.messages[field] }}
+                    {% endif %}
+                  </p>
+                {% endfor %}
+              {% endif %}
 
-          <div class="newsletter-wrap">
-            <input
-              id="contact_tags"
-              type="hidden"
-              name="contact[tags]"
-              value="prospect,newsletter">
+              <div class="newsletter-wrap">
+                <input
+                  id="contact_tags"
+                  type="hidden"
+                  name="contact[tags]"
+                  value="prospect,newsletter">
 
-            <input
-              class="email"
-              type="email"
-              name="contact[email]"
-              placeholder="{{ 'layout.footer.email' | t }}"
-              aria-label="{{ 'layout.footer.email' | t }}"
-              value="">
+                <input
+                  class="email"
+                  type="email"
+                  name="contact[email]"
+                  placeholder="{{ 'layout.footer.email' | t }}"
+                  aria-label="{{ 'layout.footer.email' | t }}"
+                  value="">
 
-            <button
-              class="submit"
-              type="submit"
-              name="subscribe">
-              {{- 'general.submit' | t -}}
-            </button>
-          </div>
-        {% endform %}
-      </li>
-    {% endif %}
-  </ul>
-
-  <style>
-    .locale-selectors__container {
-      display: none;
-    }
-  </style>
-  <div class="sub-footer">
-    <div class="sub-footer__section--left">
-      {% if linklists.footer.links.size > 0 %}
-        <nav class="footer-nav">
-          <ul>
-            {% for link in linklists.footer.links %}
-              <li>
-                <a href="{{ link.url }}">{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </nav>
-      {% endif %}
-
-      {% capture year %}
-        {{ "now" | date: "%Y" }}{% endcapture %}
-      <p>{{ 'layout.footer.copyright_text_html' | t: year: year }}<br>{{ powered_by_link }}</p>
-    </div>
-    <div class="sub-footer__section--right">
+                <button
+                  class="submit"
+                  type="submit"
+                  name="subscribe">
+                  {{- 'general.submit' | t -}}
+                </button>
+              </div>
+            {% endform %}
+          </li>
+        {% endif %}
+      </ul>
       {% if locale_selector == true or country_selector == true %}
         <div class="sub-footer__cross-border">
           {% comment %}Inject @pixelunion/shopify-cross-border/cross-border begin{% endcomment %}
