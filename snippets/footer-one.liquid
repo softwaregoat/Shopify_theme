@@ -29,11 +29,14 @@
   .main-footer .connect {
     border: unset !important;
   }
+  .main-footer .sub-footer__cross-border {
+    margin: 20px auto auto;
+  }
 </style>
 <footer class="
-                                main-footer
-                                content-area
-                              " id="main-footer">
+                                  main-footer
+                                  content-area
+                                " id="main-footer">
 
 
 
@@ -57,10 +60,10 @@
     </div>
     <div class="sub-footer__section--right">
       <ul class="
-                                                                                          connect
-                                                                                          clearfix
-                                                                                          module-count-{{ footerModules }}
-                                                                                          ">
+                                                                                                    connect
+                                                                                                    clearfix
+                                                                                                    module-count-{{ footerModules }}
+                                                                                                    ">
         {% unless settings.twitter-url.size == 0 and
  settings.facebook-url.size == 0 and
  settings.tiktok-url.size == 0 and
