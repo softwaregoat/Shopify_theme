@@ -5517,6 +5517,7 @@ table.mobile-layout tr:nth-child(even) td {
     position: relative;
     left: 0;
     width: 100%;
+    bottom: 260px;
   }
 }
 
