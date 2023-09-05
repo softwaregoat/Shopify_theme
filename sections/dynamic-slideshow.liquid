@@ -26,16 +26,16 @@
 
 <section
   class="
-                                                                                        home-section
-                                                                                        slideshow
-                                                                                        clearfix
-                                                                                        slideshow--transition-{{ section.settings.transition }}
-                                                                                        slideshow--desktop-height-{{ section.settings.desktop_height }}
-                                                                                        slideshow--mobile-height-{{ section.settings.mobile_height }}
-                                                                                        {% if section.settings.full-width == false %}
-                                                                                          content-area
-                                                                                        {% endif %}
-                                                                                      "{% if section.settings.autoplay_enable %}
+                                                                                            home-section
+                                                                                            slideshow
+                                                                                            clearfix
+                                                                                            slideshow--transition-{{ section.settings.transition }}
+                                                                                            slideshow--desktop-height-{{ section.settings.desktop_height }}
+                                                                                            slideshow--mobile-height-{{ section.settings.mobile_height }}
+                                                                                            {% if section.settings.full-width == false %}
+                                                                                              content-area
+                                                                                            {% endif %}
+                                                                                          "{% if section.settings.autoplay_enable %}
   data-autoplay="{{ section.settings.autoplay_interval | times: 1000 }}"
   {% endif %}
   {% if section.settings.parallax %}
@@ -56,7 +56,7 @@
     {% for block in section.blocks %}
       {% assign image = block.settings.image %}
       {% assign link = block.settings.link %}
-      {% assign caption_opacity = block.settings.caption_opacity %}
+      {% assign caption_opacity = block.settings.caption_opacity | divided_by: 100.0 %}
       {% assign caption = block.settings.caption %}
       {% assign caption_color = block.settings.caption_color %}
       {% assign caption_font = block.settings.caption_font %}
