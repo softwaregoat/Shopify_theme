@@ -67,12 +67,12 @@
 </style>
 {%- assign left_image = section.settings.left_image -%}
 {%- assign left_text = section.settings.left_text -%}
-{%- assign left_btn_text = section.settings.left_btn_text -%}
+{%- assign left_btn_text = section.settings.left_btn_text | escape -%}
 {%- assign left_link = section.settings.left_link -%}
 
 {%- assign right_image = section.settings.right_image -%}
 {%- assign right_text = section.settings.right_text -%}
-{%- assign right_btn_text = section.settings.right_btn_text -%}
+{%- assign right_btn_text = section.settings.right_btn_text | escape -%}
 {%- assign right_link = section.settings.right_link -%}
 
 
@@ -113,9 +113,11 @@
     {{ left_image_tag }}
     <div class="overlay-content">
       <p>{{ left_text }}</p>
-      <div class="button-container">
-        <a href="/{{ left_link }}">{{ left_btn_text }}</a>
-      </div>
+      {% if left_btn_text != blank %}
+        <div class="button-container">
+          <a href="/{{ left_link }}">{{ left_btn_text }}</a>
+        </div>
+      {% endif %}
     </div>
   </div>
 
@@ -123,9 +125,12 @@
     {{ right_image_tag }}
     <div class="overlay-content">
       <p>{{ right_text }}</p>
-      <div class="button-container">
-        <a href="/{{ right_link }}">{{ right_btn_text }}</a>
-      </div>
+      {% if right_btn_text != blank %}
+        <div class="button-container">
+          <a href="/{{ right_link }}">{{ right_btn_text }}</a>
+        </div>
+      {% endif %}
+
     </div>
   </div>
 
