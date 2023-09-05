@@ -14,119 +14,99 @@
   endif
 %}
 
-  <footer class="
-            main-footer
-            content-area
-          " id="main-footer">
-  {% comment %} <ul
-  class="
-  connect
-  clearfix
-  module-count-{{ footerModules }}
-  "
-  >
-  {% if heading != blank or text != blank %}
-  <li class="contact first">
-  {% if heading != blank %}
-  <h2 class="title">
-  {{- heading | escape -}}
-  </h2>
-  {% endif %}
+<footer class="
+                main-footer
+                content-area
+              " id="main-footer">
+  <ul class="
+              connect
+              clearfix
+              module-count-{{ footerModules }}
+              ">
+    {% unless settings.twitter-url.size == 0 and
+ settings.facebook-url.size == 0 and
+ settings.tiktok-url.size == 0 and
+ settings.snapchat-url.size == 0 and
+ settings.messenger-url.size == 0 and
+ settings.spotify-url.size == 0 and
+ settings.discord-url.size == 0 and
+ settings.reddit-url.size == 0 and
+ settings.whatsapp-url.size == 0 and
+ settings.dribbble-url.size == 0 and
+ settings.twitch-url.size == 0 and
+ settings.clubhouse-url.size == 0 and
+ settings.behance-url.size == 0 and
+ settings.flickr-url.size == 0 and
+ settings.houzz-url.size == 0 and
+ settings.opensea-url.size == 0 and
+ settings.linkedin-url.size == 0 and
+ settings.email-url.size == 0 and
+ settings.rss-url.size == 0 and
+ settings.kickstarter-url.size == 0 and
+ settings.medium-url.size == 0 and
+ settings.pinterest-url.size == 0 and
+ settings.instagram-url.size == 0 and
+ settings.tumblr-url.size == 0 and
+ settings.youtube-url.size == 0 and
+ settings.vimeo-url.size == 0
+ %}
+      <li class="social">
+        <h2 class="title">{{ 'layout.footer.social_title' | t }}</h2>
+        {% render 'social-links' %}
+      </li>
+    {% endunless %}
 
-  {% if text != blank %}
-  <div class="footer-message">
-  {{- text -}}
-  </div>
-  {% endif %}
-  </li>
-  {% endif %}
+    {% if mailingList %}
+      <li class="newsletter">
+        <h2 class="title">
+          {{- 'layout.footer.newsletter_title' | t -}}
+        </h2>
 
-  {% unless settings.twitter-url.size == 0 and
-  settings.facebook-url.size == 0 and
-  settings.tiktok-url.size == 0 and
-  settings.snapchat-url.size == 0 and
-  settings.messenger-url.size == 0 and
-  settings.spotify-url.size == 0 and
-  settings.discord-url.size == 0 and
-  settings.reddit-url.size == 0 and
-  settings.whatsapp-url.size == 0 and
-  settings.dribbble-url.size == 0 and
-  settings.twitch-url.size == 0 and
-  settings.clubhouse-url.size == 0 and
-  settings.behance-url.size == 0 and
-  settings.flickr-url.size == 0 and
-  settings.houzz-url.size == 0 and
-  settings.opensea-url.size == 0 and
-  settings.linkedin-url.size == 0 and
-  settings.email-url.size == 0 and
-  settings.rss-url.size == 0 and
-  settings.kickstarter-url.size == 0 and
-  settings.medium-url.size == 0 and
-  settings.pinterest-url.size == 0 and
-  settings.instagram-url.size == 0 and
-  settings.tumblr-url.size == 0 and
-  settings.youtube-url.size == 0 and
-  settings.vimeo-url.size == 0
-  %}
-  <li class="social">
-  <h2 class="title">{{ 'layout.footer.social_title' | t }}</h2>
-  {% render 'social-links' %}
-  </li>
-  {% endunless %}
+        {% form 'customer' %}
+          {% if form.posted_successfully? %}
+            <p class="alert-message success">
+              {{- 'layout.footer.success' | t -}}
+            </p>
+          {% elsif form.errors %}
+            {% for field in form.errors %}
+              <p class="alert-message error">
+                {{ 'contact.error' | t }}
+                {% if field == 'form' %}
+                  {{ form.errors.messages[field] }}
+                {% else %}
+                  {{ form.errors.translated_fields[field] }} - {{ form.errors.messages[field] }}
+                {% endif %}
+              </p>
+            {% endfor %}
+          {% endif %}
 
-  {% if mailingList %}
-  <li class="newsletter">
-  <h2 class="title">
-  {{- 'layout.footer.newsletter_title' | t -}}
-  </h2>
+          <div class="newsletter-wrap">
+            <input
+              id="contact_tags"
+              type="hidden"
+              name="contact[tags]"
+              value="prospect,newsletter">
 
-  {% form 'customer' %}
-  {% if form.posted_successfully? %}
-  <p class="alert-message success">
-  {{- 'layout.footer.success' | t -}}
-  </p>
-  {% elsif form.errors %}
-  {% for field in form.errors %}
-  <p class="alert-message error">
-  {{ 'contact.error' | t }}
-  {% if field == 'form' %}
-  {{ form.errors.messages[field] }}
-  {% else %}
-  {{ form.errors.translated_fields[field] }} - {{ form.errors.messages[field] }}
-  {% endif %}
-  </p>
-  {% endfor %}
-  {% endif %}
+            <input
+              class="email"
+              type="email"
+              name="contact[email]"
+              placeholder="{{ 'layout.footer.email' | t }}"
+              aria-label="{{ 'layout.footer.email' | t }}"
+              value="">
 
-  <div class="newsletter-wrap">
-  <input
-  id="contact_tags"
-  type="hidden"
-  name="contact[tags]"
-  value="prospect,newsletter"
-  >
-
-  <input
-  class="email"
-  type="email"
-  name="contact[email]"
-  placeholder="{{ 'layout.footer.email' | t }}"
-  aria-label="{{ 'layout.footer.email' | t }}"
-  value=""
-  >
-
-  <button
-  class="submit"
-  type="submit"
-  name="subscribe"
-  >
-  {{- 'general.submit' | t -}}
-  </button>
-  </div>
-  {% endform %}
-  </li>
-  {% endif %}
-  </ul> {% endcomment %}<style>
+            <button
+              class="submit"
+              type="submit"
+              name="subscribe">
+              {{- 'general.submit' | t -}}
+            </button>
+          </div>
+        {% endform %}
+      </li>
+    {% endif %}
+  </ul>
+  <style>
     .locale-selectors__container {
       display: none;
     }
