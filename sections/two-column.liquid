@@ -115,7 +115,9 @@
       <p>{{ left_text }}</p>
       {% if left_btn_text != blank %}
         <div class="button-container">
-          <a href="/{{ left_link }}">{{ left_btn_text }}</a>
+          <a href="/{{ left_link }}">
+            <span class="call-to-action">{{ left_btn_text }}</span>
+          </a>
         </div>
       {% endif %}
     </div>
@@ -127,7 +129,9 @@
       <p>{{ right_text }}</p>
       {% if right_btn_text != blank %}
         <div class="button-container">
-          <a href="/{{ right_link }}">{{ right_btn_text }}</a>
+          <a href="/{{ right_link }}">
+            <span class="call-to-action">{{ right_btn_text }}</span>
+          </a>
         </div>
       {% endif %}
 
