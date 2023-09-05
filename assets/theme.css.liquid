@@ -6276,9 +6276,6 @@ table.mobile-layout tr:nth-child(even) td {
     left: 0;
     width: 100%;
   }
-  .slide .content-outer-wrap h3.tagline {
-    font-size: 30px !important;
-  }
 }
 
 .slide .mobile-link {
@@ -6306,10 +6303,13 @@ table.mobile-layout tr:nth-child(even) td {
 }
 @media(max-width: 719px) {
   .slide .content-inner-wrap {
-    position: static;
+    /* position: static; */
     top: unset;
-    bottom: 200px;
-    left: unset;
+    bottom: 160px;
+    left: 8%;
+  }
+  .slide .content-outer-wrap h3.tagline {
+    font-size: 50px !important;
   }
 }
 .slide .content-inner-wrap.left {
