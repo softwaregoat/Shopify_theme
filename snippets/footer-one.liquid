@@ -13,17 +13,27 @@
     assign footerModules = footerModules | plus: 1
   endif
 %}
-
+<style>
+  .locale-selectors__container {
+    display: none;
+  }
+  .social-links {
+    display: flex;
+  }
+  #main-footer .connect > li {
+    padding: unset !important;
+  }
+  .main-footer .connect {
+    border: unset !important;
+  }
+</style>
 <footer class="
-                    main-footer
-                    content-area
-                  " id="main-footer">
+                            main-footer
+                            content-area
+                          " id="main-footer">
 
-  <style>
-    .locale-selectors__container {
-      display: none;
-    }
-  </style>
+
+
   <div class="sub-footer">
     <div class="sub-footer__section--left">
       {% if linklists.footer.links.size > 0 %}
@@ -44,10 +54,10 @@
     </div>
     <div class="sub-footer__section--right">
       <ul class="
-                              connect
-                              clearfix
-                              module-count-{{ footerModules }}
-                              ">
+                                                                      connect
+                                                                      clearfix
+                                                                      module-count-{{ footerModules }}
+                                                                      ">
         {% unless settings.twitter-url.size == 0 and
  settings.facebook-url.size == 0 and
  settings.tiktok-url.size == 0 and
