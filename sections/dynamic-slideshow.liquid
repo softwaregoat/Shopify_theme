@@ -26,16 +26,16 @@
 
 <section
   class="
-                                                        home-section
-                                                        slideshow
-                                                        clearfix
-                                                        slideshow--transition-{{ section.settings.transition }}
-                                                        slideshow--desktop-height-{{ section.settings.desktop_height }}
-                                                        slideshow--mobile-height-{{ section.settings.mobile_height }}
-                                                        {% if section.settings.full-width == false %}
-                                                          content-area
-                                                        {% endif %}
-                                                      "{% if section.settings.autoplay_enable %}
+                                                                home-section
+                                                                slideshow
+                                                                clearfix
+                                                                slideshow--transition-{{ section.settings.transition }}
+                                                                slideshow--desktop-height-{{ section.settings.desktop_height }}
+                                                                slideshow--mobile-height-{{ section.settings.mobile_height }}
+                                                                {% if section.settings.full-width == false %}
+                                                                  content-area
+                                                                {% endif %}
+                                                              "{% if section.settings.autoplay_enable %}
   data-autoplay="{{ section.settings.autoplay_interval | times: 1000 }}"
   {% endif %}
   {% if section.settings.parallax %}
@@ -128,6 +128,22 @@
                 {% endif %}
                 {% if caption != blank %}
                   <h3 class="tagline" style=" color:{{ caption_color }}; font-size:{{ caption_size }}px; line-height:{{ caption_line_height }}; font-family:{{ caption_font }}!important; transform:rotate({{ caption_rotation_angle }}deg); ">{{ caption | escape }}</h3>
+                {% endif %}
+              {% endif %}
+              {% if alignment == 'right center' %}
+
+                {% if caption != blank %}
+                  <h3 class="tagline" style=" color:{{ caption_color }}; font-size:{{ caption_size }}px; line-height:{{ caption_line_height }}; font-family:{{ caption_font }}!important; transform:rotate({{ caption_rotation_angle }}deg); ">{{ caption | escape }}</h3>
+                {% endif %}
+                {% if button != blank %}
+                  <div class="call-to-action-wrap" style="min-height: 50px;width:100%;">
+                    <span
+                      class="call-to-action"
+                      href="{{ link }}"
+                      style="background-color:transparent!important; border:2px solid white;     padding: 10px;border-radius:5px;color:{{ button_color }}">
+                      {{ button }}
+                    </span>
+                  </div>
                 {% endif %}
               {% endif %}
               {% comment %} </div> {% endcomment %}
