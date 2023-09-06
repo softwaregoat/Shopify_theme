@@ -25,24 +25,32 @@
 </script>
 
 <style>
-  .call-to-action-wrap,
-  .rotate-caption {
+  .slide-half-content {
     width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .rotate-text {
+    text-align: left;
+    position: absolute;
+    bottom: 50px;
+
   }
 </style>
 
 <section
   class="
-                                                                                                                home-section
-                                                                                                                slideshow
-                                                                                                                clearfix
-                                                                                                                slideshow--transition-{{ section.settings.transition }}
-                                                                                                                slideshow--desktop-height-{{ section.settings.desktop_height }}
-                                                                                                                slideshow--mobile-height-{{ section.settings.mobile_height }}
-                                                                                                                {% if section.settings.full-width == false %}
-                                                                                                                  content-area
-                                                                                                                {% endif %}
-                                                                                                              "{% if section.settings.autoplay_enable %}
+                                                                                                                                                home-section
+                                                                                                                                                slideshow
+                                                                                                                                                clearfix
+                                                                                                                                                slideshow--transition-{{ section.settings.transition }}
+                                                                                                                                                slideshow--desktop-height-{{ section.settings.desktop_height }}
+                                                                                                                                                slideshow--mobile-height-{{ section.settings.mobile_height }}
+                                                                                                                                                {% if section.settings.full-width == false %}
+                                                                                                                                                  content-area
+                                                                                                                                                {% endif %}
+                                                                                                                                              "{% if section.settings.autoplay_enable %}
   data-autoplay="{{ section.settings.autoplay_interval | times: 1000 }}"
   {% endif %}
   {% if section.settings.parallax %}
@@ -125,10 +133,9 @@
             <a class="mobile-link" href="{{ link }}"></a>
 
             <div class="content-inner-wrap {{ alignment }}">
-              {% comment %} <div class="content"> {% endcomment %}
               {% if alignment == 'left middle' %}
                 {% if button != blank %}
-                  <div class="call-to-action-wrap" style="min-height: 50px;width:50%;">
+                  <div class="slide-half-content call-to-action-wrap" style="min-height: 50px;width:50%;">
                     <span
                       class="call-to-action"
                       href="{{ link }}"
@@ -138,8 +145,17 @@
                   </div>
                 {% endif %}
                 {% if caption != blank %}
-                  <div class="rotate-caption">
-                    <h3 class="tagline" style="text-align:left; color:{{ caption_color }}; font-size:{{ caption_size }}px; line-height:{{ caption_line_height }}; font-family:{{ caption_font }}!important; transform:rotate({{ caption_rotation_angle }}deg); opacity:{{caption_opacity}}; ">{{ caption | escape }}</h3>
+                  <div class="slide-half-content rotate-caption">
+                    <h3 class="tagline" style="
+                                                                text-align:left;
+                                                                color:{{ caption_color }}; 
+                                                                font-size:{{ caption_size }}px;
+                                                                line-height:{{ caption_line_height }};
+                                                                font-family:{{ caption_font }}!important;
+                                                                opacity:{{caption_opacity}}; 
+                                                                transform-origin: top left;
+                                                                transform: translateY(100%) rotate({{caption_rotation_angle}}deg);
+                                                                ">{{ caption | escape }}</h3>
                   </div>
 
                 {% endif %}
@@ -147,13 +163,13 @@
               {% if alignment == 'right middle' %}
 
                 {% if caption != blank %}
-                  <div class="rotate-caption">
+                  <div class="slide-half-content rotate-caption">
                     <h3 class="tagline" style="text-align:left; color:{{ caption_color }}; font-size:{{ caption_size }}px; line-height:{{ caption_line_height }}; font-family:{{ caption_font }}!important; transform:rotate({{ caption_rotation_angle }}deg);opacity:{{caption_opacity}}; ">{{ caption | escape }}</h3>
                   </div>
 
                 {% endif %}
                 {% if button != blank %}
-                  <div class="call-to-action-wrap" style="min-height: 50px;width:100%;">
+                  <div class="slide-half-content call-to-action-wrap" style="min-height: 50px;width:100%;">
                     <span
                       class="call-to-action"
                       href="{{ link }}"
