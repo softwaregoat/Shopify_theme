@@ -26,16 +26,16 @@
 
 <section
   class="
-                                                                                                home-section
-                                                                                                slideshow
-                                                                                                clearfix
-                                                                                                slideshow--transition-{{ section.settings.transition }}
-                                                                                                slideshow--desktop-height-{{ section.settings.desktop_height }}
-                                                                                                slideshow--mobile-height-{{ section.settings.mobile_height }}
-                                                                                                {% if section.settings.full-width == false %}
-                                                                                                  content-area
-                                                                                                {% endif %}
-                                                                                              "{% if section.settings.autoplay_enable %}
+                                                                                                    home-section
+                                                                                                    slideshow
+                                                                                                    clearfix
+                                                                                                    slideshow--transition-{{ section.settings.transition }}
+                                                                                                    slideshow--desktop-height-{{ section.settings.desktop_height }}
+                                                                                                    slideshow--mobile-height-{{ section.settings.mobile_height }}
+                                                                                                    {% if section.settings.full-width == false %}
+                                                                                                      content-area
+                                                                                                    {% endif %}
+                                                                                                  "{% if section.settings.autoplay_enable %}
   data-autoplay="{{ section.settings.autoplay_interval | times: 1000 }}"
   {% endif %}
   {% if section.settings.parallax %}
@@ -66,6 +66,10 @@
       {% assign button = block.settings.button | escape %}
       {% assign button_color = block.settings.button_color %}
       {% assign alignment = block.settings.alignment %}
+
+      {% if caption_size > 150 %}
+        {% assign caption_size = 150 %}
+      {% endif %}
 
 
 
