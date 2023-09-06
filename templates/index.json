@@ -9,9 +9,9 @@
             "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-top-1.jpg",
             "caption": "we are here 'cause we're simply\nuncoventional",
             "caption_color": "#e1cb10",
-            "caption_opacity": 100,
-            "caption_size": 90,
-            "caption_font": "arvo_n4",
+            "caption_opacity": 80,
+            "caption_size": 150,
+            "caption_font": "archivo_n4",
             "caption_line_height": 0.7,
             "caption_rotation_angle": -90,
             "button": "DISCOVER BRAND",
@@ -22,31 +22,10 @@
             "background": "#000000",
             "opacity": 1
           }
-        },
-        "7a62a067-1d64-4f53-8a1a-fc57b4d59ea8": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-top-1.jpg",
-            "caption": "we are here 'cause we're simply\nuncoventional",
-            "caption_color": "#e1cb10",
-            "caption_opacity": 20,
-            "caption_size": 90,
-            "caption_font": "arvo_n4",
-            "caption_line_height": 0.7,
-            "caption_rotation_angle": -90,
-            "button": "DISCOVER BRAND",
-            "button_color": "#ffffff",
-            "link": "",
-            "alignment": "right middle",
-            "show_overlay": false,
-            "background": "#000000",
-            "opacity": 1
-          }
         }
       },
       "block_order": [
-        "block-1",
-        "7a62a067-1d64-4f53-8a1a-fc57b4d59ea8"
+        "block-1"
       ],
       "settings": {
         "desktop_height": "extra-large",
@@ -65,7 +44,7 @@
         "title": "This month's absolute loved one.",
         "border": false,
         "rows": 1,
-        "products_per_row": 3
+        "products_per_row": 4
       }
     },
     "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b": {
@@ -77,9 +56,9 @@
             "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeperfume-1.jpg",
             "caption": "open up to the world let your essence free",
             "caption_color": "#e1cb10",
-            "caption_opacity": 20,
+            "caption_opacity": 70,
             "caption_size": 90,
-            "caption_font": "helvetica_n4",
+            "caption_font": "arvo_n4",
             "caption_line_height": 1,
             "caption_rotation_angle": -90,
             "button": "SHOP PERFUME",
@@ -112,7 +91,7 @@
       ],
       "settings": {
         "left_image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeperfume-SX2.jpg",
-        "left_text": "'N SERIES'\ndiscover concept\nN1 \/CONCRETE aged 12 weeks\nN2 \/SINLESS aged 20weeks\nN3 \/NOMA fumé\nN4 \/DECADE cold infusion\nN5 \/CARBON aged 24weeks",
+        "left_text": "<p>'N SERIES'\ndiscover concept\nN1 \/CONCRETE aged 12 weeks\nN2 \/SINLESS aged 20weeks\nN3 \/NOMA fumé\nN4 \/DECADE cold infusion\nN5 \/CARBON aged 24weeks<\/p>",
         "left_btn_text": "N SERIES PERFUME",
         "left_link": "shopify:\/\/collections\/essence",
         "right_image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeperfume-DX3.jpg",
