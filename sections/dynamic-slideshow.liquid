@@ -26,16 +26,16 @@
 
 <section
   class="
-                                                                                                    home-section
-                                                                                                    slideshow
-                                                                                                    clearfix
-                                                                                                    slideshow--transition-{{ section.settings.transition }}
-                                                                                                    slideshow--desktop-height-{{ section.settings.desktop_height }}
-                                                                                                    slideshow--mobile-height-{{ section.settings.mobile_height }}
-                                                                                                    {% if section.settings.full-width == false %}
-                                                                                                      content-area
-                                                                                                    {% endif %}
-                                                                                                  "{% if section.settings.autoplay_enable %}
+                                                                                                            home-section
+                                                                                                            slideshow
+                                                                                                            clearfix
+                                                                                                            slideshow--transition-{{ section.settings.transition }}
+                                                                                                            slideshow--desktop-height-{{ section.settings.desktop_height }}
+                                                                                                            slideshow--mobile-height-{{ section.settings.mobile_height }}
+                                                                                                            {% if section.settings.full-width == false %}
+                                                                                                              content-area
+                                                                                                            {% endif %}
+                                                                                                          "{% if section.settings.autoplay_enable %}
   data-autoplay="{{ section.settings.autoplay_interval | times: 1000 }}"
   {% endif %}
   {% if section.settings.parallax %}
@@ -131,13 +131,19 @@
                   </div>
                 {% endif %}
                 {% if caption != blank %}
-                  <h3 class="tagline" style="text-align:left; color:{{ caption_color }}; font-size:{{ caption_size }}px; line-height:{{ caption_line_height }}; font-family:{{ caption_font }}!important; transform:rotate({{ caption_rotation_angle }}deg); opacity:{{caption_opacity}}; ">{{ caption | escape }}</h3>
+                  <div class="rotate-caption">
+                    <h3 class="tagline" style="text-align:left; color:{{ caption_color }}; font-size:{{ caption_size }}px; line-height:{{ caption_line_height }}; font-family:{{ caption_font }}!important; transform:rotate({{ caption_rotation_angle }}deg); opacity:{{caption_opacity}}; ">{{ caption | escape }}</h3>
+                  </div>
+
                 {% endif %}
               {% endif %}
               {% if alignment == 'right middle' %}
 
                 {% if caption != blank %}
-                  <h3 class="tagline" style="text-align:left; color:{{ caption_color }}; font-size:{{ caption_size }}px; line-height:{{ caption_line_height }}; font-family:{{ caption_font }}!important; transform:rotate({{ caption_rotation_angle }}deg);opacity:{{caption_opacity}}; ">{{ caption | escape }}</h3>
+                  <div class="rotate-caption">
+                    <h3 class="tagline" style="text-align:left; color:{{ caption_color }}; font-size:{{ caption_size }}px; line-height:{{ caption_line_height }}; font-family:{{ caption_font }}!important; transform:rotate({{ caption_rotation_angle }}deg);opacity:{{caption_opacity}}; ">{{ caption | escape }}</h3>
+                  </div>
+
                 {% endif %}
                 {% if button != blank %}
                   <div class="call-to-action-wrap" style="min-height: 50px;width:100%;">
