@@ -24,18 +24,25 @@
   }
 </script>
 
+<style>
+  .call-to-action-wrap,
+  .rotate-caption {
+    width: 50%;
+  }
+</style>
+
 <section
   class="
-                                                                                                            home-section
-                                                                                                            slideshow
-                                                                                                            clearfix
-                                                                                                            slideshow--transition-{{ section.settings.transition }}
-                                                                                                            slideshow--desktop-height-{{ section.settings.desktop_height }}
-                                                                                                            slideshow--mobile-height-{{ section.settings.mobile_height }}
-                                                                                                            {% if section.settings.full-width == false %}
-                                                                                                              content-area
-                                                                                                            {% endif %}
-                                                                                                          "{% if section.settings.autoplay_enable %}
+                                                                                                                home-section
+                                                                                                                slideshow
+                                                                                                                clearfix
+                                                                                                                slideshow--transition-{{ section.settings.transition }}
+                                                                                                                slideshow--desktop-height-{{ section.settings.desktop_height }}
+                                                                                                                slideshow--mobile-height-{{ section.settings.mobile_height }}
+                                                                                                                {% if section.settings.full-width == false %}
+                                                                                                                  content-area
+                                                                                                                {% endif %}
+                                                                                                              "{% if section.settings.autoplay_enable %}
   data-autoplay="{{ section.settings.autoplay_interval | times: 1000 }}"
   {% endif %}
   {% if section.settings.parallax %}
@@ -121,7 +128,7 @@
               {% comment %} <div class="content"> {% endcomment %}
               {% if alignment == 'left middle' %}
                 {% if button != blank %}
-                  <div class="call-to-action-wrap" style="min-height: 50px;width:100%;">
+                  <div class="call-to-action-wrap" style="min-height: 50px;width:50%;">
                     <span
                       class="call-to-action"
                       href="{{ link }}"
