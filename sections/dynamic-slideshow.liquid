@@ -35,7 +35,7 @@
     text-align: left;
     position: absolute;
     bottom: 50px;
-    word-break: break-all;
+    word-break: break-word;
     max-width: 600px;
   }
 
@@ -48,16 +48,16 @@
 
 <section
   class="
-                                                                                                                                                                    home-section
-                                                                                                                                                                    slideshow
-                                                                                                                                                                    clearfix
-                                                                                                                                                                    slideshow--transition-{{ section.settings.transition }}
-                                                                                                                                                                    slideshow--desktop-height-{{ section.settings.desktop_height }}
-                                                                                                                                                                    slideshow--mobile-height-{{ section.settings.mobile_height }}
-                                                                                                                                                                    {% if section.settings.full-width == false %}
-                                                                                                                                                                      content-area
-                                                                                                                                                                    {% endif %}
-                                                                                                                                                                  "{% if section.settings.autoplay_enable %}
+                                                                                                                                                                        home-section
+                                                                                                                                                                        slideshow
+                                                                                                                                                                        clearfix
+                                                                                                                                                                        slideshow--transition-{{ section.settings.transition }}
+                                                                                                                                                                        slideshow--desktop-height-{{ section.settings.desktop_height }}
+                                                                                                                                                                        slideshow--mobile-height-{{ section.settings.mobile_height }}
+                                                                                                                                                                        {% if section.settings.full-width == false %}
+                                                                                                                                                                          content-area
+                                                                                                                                                                        {% endif %}
+                                                                                                                                                                      "{% if section.settings.autoplay_enable %}
   data-autoplay="{{ section.settings.autoplay_interval | times: 1000 }}"
   {% endif %}
   {% if section.settings.parallax %}
@@ -154,15 +154,15 @@
                 {% if caption != blank %}
                   <div class="slide-half-content rotate-caption">
                     <h3 class="tagline rotate-text" style="
-                                                                                                                                                                              text-align:left;
-                                                                                                                                                                              color:{{ caption_color }}; 
-                                                                                                                                                                              font-size:{{ caption_size }}px;
-                                                                                                                                                                              line-height:{{ caption_line_height }};
-                                                                                                                                                                              font-family:{{ caption_font }}!important;
-                                                                                                                                                                              opacity:{{caption_opacity}}; 
-                                                                                                                                                                              transform-origin: top left;
-                                                                                                                                                                              transform: translateY(100%) rotate({{caption_rotation_angle}}deg);
-                                                                                                                                                                              ">{{ caption | escape }}</h3>
+                                                                                                                                                                                                    text-align:left;
+                                                                                                                                                                                                    color:{{ caption_color }}; 
+                                                                                                                                                                                                    font-size:{{ caption_size }}px;
+                                                                                                                                                                                                    line-height:{{ caption_line_height }};
+                                                                                                                                                                                                    font-family:{{ caption_font }}!important;
+                                                                                                                                                                                                    opacity:{{caption_opacity}}; 
+                                                                                                                                                                                                    transform-origin: top left;
+                                                                                                                                                                                                    transform: translateY(100%) rotate({{caption_rotation_angle}}deg);
+                                                                                                                                                                                                    ">{{ caption | escape }}</h3>
                   </div>
 
                 {% endif %}
