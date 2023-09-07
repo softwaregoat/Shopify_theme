@@ -54,7 +54,7 @@
       {% assign button = block.settings.button | escape %}
       {% assign button_color = block.settings.button_color %}
       {% assign alignment = block.settings.alignment %}
-      {%- assign caption_font_family = block.caption_font.family | append: ',' | append: block.caption_font.fallback_families -%}
+      {%- assign caption_font_family = block.caption_font.family -%}
       {%- assign caption_font_style = block.caption_font.style -%}
       {%- assign caption_font_weight = block.caption_font.weight | times: 1 -%}
 
