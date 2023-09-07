@@ -58,7 +58,7 @@
       {%- assign caption_font_style = block.caption_font.style -%}
       {%- assign caption_font_weight = block.caption_font.weight | times: 1 -%}
 
-      <h1>{{ caption_font_weight }}</h1>
+      <h1>{{ caption_font_style }}</h1>
 
       {% if caption_size > 150 %}
         {% assign caption_size = 150 %}
