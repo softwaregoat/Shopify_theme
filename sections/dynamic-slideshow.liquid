@@ -48,6 +48,7 @@
       {% assign caption_opacity = block.settings.caption_opacity | divided_by: 100.0 %}
       {% assign caption = block.settings.caption %}
       {% assign caption_font_size = block.settings.caption_font_size %}
+      {% assign caption_font = block.settings.caption_font %}
       {% assign caption_color = block.settings.caption_color %}
       {% assign caption_line_height = block.settings.caption_line_height %}
       {% assign caption_rotation_angle = block.settings.caption_rotation_angle %}
@@ -56,8 +57,14 @@
       {% assign alignment = block.settings.alignment %}
 
 
-      {% if caption_size > 150 %}
-        {% assign caption_size = 150 %}
+      {% assign caption_font_family = caption_font.family %}
+      {% assign caption_font_style = caption_font.style %}
+      {% assign caption_font_weight = caption_font.weight %}
+
+
+
+      {% if caption_font_size > 150 %}
+        {% assign caption_font_size = 150 %}
       {% endif %}
       {%- capture image_html -%}
         {% if image %}
@@ -87,9 +94,7 @@
           {% if block.settings.show_overlay and block.settings.background != blank %}
             {% assign opacity = block.settings.opacity | times: 0.01 %}
             {% assign overlay = block.settings.background | color_modify: 'alpha', opacity %}
-            <div
-              class="image-overlay"
-              style="background-color: {{ overlay }};"></div>
+            <div class="image-overlay" style="background-color: {{ overlay }};"></div>
           {% endif %}
 
           {% if link != blank %}
@@ -119,7 +124,7 @@
                 {% endif %}
                 {% if caption != blank %}
                   <div class="slide-half-content rotate-caption">
-                    <h1 class="tagline rotate-text" style=" text-align:left; font-size:{{caption_font_size}};color:{{ caption_color }}; line-height:{{ caption_line_height }}; opacity:{{caption_opacity}}; transform-origin: top left; transform: translateY(100%) rotate({{caption_rotation_angle}}deg);">
+                    <h1 class="tagline rotate-text" style="font-family:{{caption_font_family}}!important; font-style:{{caption_font_style}}; font-weight:{{caption_font_weight}}; text-align:left; font-size:{{caption_font_size}};color:{{ caption_color }}; line-height:{{ caption_line_height }}; opacity:{{caption_opacity}}; transform-origin: top left; transform: translateY(100%) rotate({{caption_rotation_angle}}deg);">
                       {{ caption | escape }}
                     </h1>
                   </div>
@@ -129,10 +134,9 @@
               {% if alignment == 'right middle' %}
 
                 {% if caption != blank %}
-                  <div class="slide-half-content rotate-caption">
-                    <h1
-                      class="tagline rotate-text"
-                      style="text-align:left; font-size:{{caption_font_size}};color:{{ caption_color }};line-height:{{ caption_line_height }}; font-family:{{ caption_font.family }}!important; transform:rotate({{ caption_rotation_angle }}deg);opacity:{{caption_opacity}};">{{ caption | escape }}</h1>
+                  <div
+                    class="slide-half-content rotate-caption">
+                    <h1 class="tagline rotate-text" style="font-family:{{caption_font_family}}!important; font-style:{{caption_font_style}}; font-weight:{{caption_font_weight}}; text-align:left; font-size:{{caption_font_size}};color:{{ caption_color }};line-height:{{ caption_line_height }}; transform:rotate({{ caption_rotation_angle }}deg);opacity:{{caption_opacity}};">{{ caption | escape }}</h1>
                   </div>
 
                 {% endif %}
@@ -278,6 +282,11 @@
             "default": 15
           },
           {
+            "type": "font_picker",
+            "id": "caption_font",
+            "label": "Caption Font",
+            "default": "work_sans_n6"
+          }, {
             "type": "color",
             "id": "caption_color",
             "label": "Caption Color",
