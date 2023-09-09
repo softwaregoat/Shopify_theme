@@ -8,10 +8,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-top-1.jpg",
             "caption": "we are here 'cause we're simply\nuncoventional",
+            "caption_font_size": 15,
             "caption_color": "#e1cb10",
             "caption_opacity": 80,
-            "caption_size": 150,
-            "caption_font": "fjalla_one_n4",
             "caption_line_height": 0.7,
             "caption_rotation_angle": -90,
             "button": "DISCOVER BRAND",
@@ -44,7 +43,7 @@
         "title": "This month's absolute loved one.",
         "border": false,
         "rows": 1,
-        "products_per_row": 4
+        "products_per_row": 3
       }
     },
     "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b": {
@@ -55,10 +54,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeperfume-1.jpg",
             "caption": "open up to the world let your essence free",
+            "caption_font_size": 15,
             "caption_color": "#e1cb10",
             "caption_opacity": 70,
-            "caption_size": 90,
-            "caption_font": "arvo_n4",
             "caption_line_height": 1,
             "caption_rotation_angle": -90,
             "button": "SHOP PERFUME",
