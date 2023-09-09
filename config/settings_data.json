@@ -13,7 +13,7 @@
     "nav-background-colour": "#ffffff",
     "nav-border-colour": "#dddddd",
     "font_body": "source_code_pro_n4",
-    "font_headings": "playfair_display_n4",
+    "font_headings": "source_code_pro_n4",
     "font_headings_captialize": false,
     "font_headings_secondary": "source_code_pro_n4",
     "font_accent": "source_code_pro_n4",
@@ -42,21 +42,7 @@
     "show-mailing-list": true,
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "15119538188275799212": {
-        "type": "shopify:\/\/apps\/fontify-google-custom-fonts\/blocks\/app-embed\/334490e2-2153-4a2e-a452-e90bdeffa3cc",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "10746902591489815047": {
-        "type": "shopify:\/\/apps\/use-google-fonts-custom-fonts\/blocks\/app-embed\/2caf2c68-0038-455e-b0b9-066a7c2ad923",
-        "disabled": true,
-        "settings": {
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Organic": {
