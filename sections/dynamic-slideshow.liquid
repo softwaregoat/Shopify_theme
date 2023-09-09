@@ -47,6 +47,7 @@
       {% assign link = block.settings.link %}
       {% assign caption_opacity = block.settings.caption_opacity | divided_by: 100.0 %}
       {% assign caption = block.settings.caption %}
+      {% assign caption_font_size = block.settings.caption_font_size %}
       {% assign caption_color = block.settings.caption_color %}
       {% assign caption_line_height = block.settings.caption_line_height %}
       {% assign caption_rotation_angle = block.settings.caption_rotation_angle %}
@@ -86,7 +87,9 @@
           {% if block.settings.show_overlay and block.settings.background != blank %}
             {% assign opacity = block.settings.opacity | times: 0.01 %}
             {% assign overlay = block.settings.background | color_modify: 'alpha', opacity %}
-            <div class="image-overlay" style="background-color: {{ overlay }};"></div>
+            <div
+              class="image-overlay"
+              style="background-color: {{ overlay }};"></div>
           {% endif %}
 
           {% if link != blank %}
@@ -116,9 +119,7 @@
                 {% endif %}
                 {% if caption != blank %}
                   <div class="slide-half-content rotate-caption">
-                    <h1
-                      class="tagline rotate-text"
-                      style=" text-align:left; color:{{ caption_color }}; line-height:{{ caption_line_height }}; opacity:{{caption_opacity}}; transform-origin: top left; transform: translateY(100%) rotate({{caption_rotation_angle}}deg);">
+                    <h1 class="tagline rotate-text" style=" text-align:left; font-size:{{caption_font_size}};color:{{ caption_color }}; line-height:{{ caption_line_height }}; opacity:{{caption_opacity}}; transform-origin: top left; transform: translateY(100%) rotate({{caption_rotation_angle}}deg);">
                       {{ caption | escape }}
                     </h1>
                   </div>
@@ -129,7 +130,9 @@
 
                 {% if caption != blank %}
                   <div class="slide-half-content rotate-caption">
-                    <h1 class="tagline rotate-text" style="text-align:left; color:{{ caption_color }};line-height:{{ caption_line_height }}; font-family:{{ caption_font.family }}!important; transform:rotate({{ caption_rotation_angle }}deg);opacity:{{caption_opacity}};">{{ caption | escape }}</h1>
+                    <h1
+                      class="tagline rotate-text"
+                      style="text-align:left; font-size:{{caption_font_size}};color:{{ caption_color }};line-height:{{ caption_line_height }}; font-family:{{ caption_font.family }}!important; transform:rotate({{ caption_rotation_angle }}deg);opacity:{{caption_opacity}};">{{ caption | escape }}</h1>
                   </div>
 
                 {% endif %}
@@ -269,12 +272,17 @@
             "default": "Introduce customers to your shop with lifestyle imagery and product photography."
           },
           {
+            "type": "number",
+            "id": "caption_font_size",
+            "label": "Caption Font Size",
+            "default": 15
+          },
+          {
             "type": "color",
             "id": "caption_color",
             "label": "Caption Color",
             "default": "#FFFFFF"
-          },
-          {
+          }, {
             "id": "caption_opacity",
             "type": "range",
             "label": "Caption Opacity",
