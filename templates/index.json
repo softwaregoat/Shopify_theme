@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-top-1.jpg",
             "caption": "we are here 'cause we're simply\nuncoventional",
-            "caption_font_size": 50,
+            "caption_font_size": 150,
             "caption_color": "#e1cb10",
             "caption_opacity": 80,
             "caption_line_height": 0.7,
