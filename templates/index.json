@@ -105,12 +105,24 @@
         "right_btn_text": "",
         "right_link": ""
       }
+    },
+    "dc7d6be7-713c-443a-a246-af89c1e8caa1": {
+      "type": "dynamic-collection",
+      "settings": {
+        "collection": "",
+        "title": "Featured collection",
+        "border": true,
+        "rows": 1,
+        "products_per_row": 3,
+        "products_per_row_mobile": 4
+      }
     }
   },
   "order": [
     "dynamic-slideshow-1",
     "eb5dcef8-60e9-435e-95ec-b72bf5ec1d69",
     "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b",
-    "c9c8acb3-8ec6-4da0-8014-794963fdf847"
+    "c9c8acb3-8ec6-4da0-8014-794963fdf847",
+    "dc7d6be7-713c-443a-a246-af89c1e8caa1"
   ]
 }
