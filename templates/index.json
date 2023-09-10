@@ -40,7 +40,7 @@
     "eb5dcef8-60e9-435e-95ec-b72bf5ec1d69": {
       "type": "dynamic-collection",
       "custom_css": [
-        ".section-title {text-align: left; text-transform: lowercase; font-size: 14px;}"
+        ".section-title {text-align: left; text-transform: lowercase; font-size: 16px;}"
       ],
       "settings": {
         "collection": "",
