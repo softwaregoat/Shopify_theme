@@ -70,11 +70,13 @@
 </style>
 {%- assign left_image = section.settings.left_image -%}
 {%- assign left_text = section.settings.left_text -%}
+{%- assign left_text_size = section.settings.left_text_size -%}
 {%- assign left_btn_text = section.settings.left_btn_text | escape -%}
 {%- assign left_link = section.settings.left_link -%}
 
 {%- assign right_image = section.settings.right_image -%}
 {%- assign right_text = section.settings.right_text -%}
+{%- assign right_text_size = section.settings.right_text_size -%}
 {%- assign right_btn_text = section.settings.right_btn_text | escape -%}
 {%- assign right_link = section.settings.right_link -%}
 
@@ -115,7 +117,7 @@
   <div class="one-half-column left">
     {{ left_image_tag }}
     <div class="overlay-content">
-      <p>{{ left_text }}</p>
+      <p style="font-size:{{left_text_size}}">{{ left_text }}</p>
       {% if left_btn_text != blank %}
         <div class="button-container">
           <a href="/{{ left_link }}">
@@ -129,7 +131,7 @@
   <div class="one-half-column right">
     {{ right_image_tag }}
     <div class="overlay-content">
-      <p>{{ right_text }}</p>
+      <p style="font-size:{{right_text_size}}">{{ right_text }}</p>
       {% if right_btn_text != blank %}
         <div class="button-container">
           <a href="/{{ right_link }}">
@@ -161,14 +163,19 @@
         "label": "Left Text",
         "default": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.</p>"
       },
+      {
+        "type": "number",
+        "id": "left_text_size",
+        "label": "Left Text size",
+        "default": 10
+      },
 
       {
         "type": "text",
         "id": "left_btn_text",
         "label": "Left Button Text",
         "default": "Left Button Text"
-      },
-      {
+      }, {
         "type": "url",
         "id": "left_link",
         "label": "Left Button link URL"
@@ -181,6 +188,11 @@
         "id": "right_text",
         "label": "Right Text",
         "default": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.</p>"
+      }, {
+        "type": "number",
+        "id": "right_text_size",
+        "label": "Right Text size",
+        "default": 10
       }, {
         "type": "text",
         "id": "right_btn_text",
