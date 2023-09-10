@@ -37,7 +37,7 @@
             "button": "Your call to action button",
             "button_color": "#FFFFFF",
             "link": "",
-            "alignment": "left middle",
+            "alignment": "right middle",
             "show_overlay": false,
             "background": "#000",
             "opacity": 20
