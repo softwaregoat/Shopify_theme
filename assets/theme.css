@@ -12119,23 +12119,7 @@ in both native and antiscroll scrollbars appearing at the same time.
   cursor: pointer;
 }
 
-[aria-expanded="true"]:after {
-  transform: translateY(0%) rotate(90deg) !important;
-}
 
-
-.disclosure__toggle::after {
-  position: absolute;
-  top: 15px;
-  content: "";
-  right: 20px;
-  width: 7px;
-  height: 7px;
-  transform: translateY(-45%) rotate(-45deg) !important;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
-  transform-origin: center center;
-}
 @supports ((-webkit-mask-image: var(--disclosure-toggle-svg)) or (mask-image: var(--disclosure-toggle-svg))) {
   .disclosure__toggle::after {
     background-color: var(--disclosure-toggle-svg-color);
