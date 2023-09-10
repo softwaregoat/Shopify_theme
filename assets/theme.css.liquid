@@ -2987,7 +2987,6 @@ main section:first-child .section-border {
 }
 .sub-footer__section--left {
   width: 50%;
-  min-width: 500px;
 }
 .main-footer .sub-footer .payment-options svg {
   width: auto;
@@ -2996,17 +2995,18 @@ main section:first-child .section-border {
   max-height: 34px;
 }
 
-.main-footer .sub-footer__section--right {
-  flex: 1;
-  margin-bottom: 15px;
-}
 
 .main-footer .sub-footer__section--right {
   text-align: right;
+  flex: 1;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 910px) {
   .main-footer .sub-footer__section--right {
     text-align: center;
+  }
+  .sub-footer__section--left {
+    width: 100%;
   }
 }
 .main-footer .sub-footer__cross-border {
