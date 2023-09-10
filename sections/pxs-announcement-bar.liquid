@@ -26,7 +26,7 @@
   .pxs-announcement-bar-text-mobile {
     width: 100%;
     height: 35px;
-    line-height: 0;
+    line-height: 2;
   }
   @media(max-width: 767px) {
     .pxs-announcement-bar-text-desktop {
@@ -36,11 +36,11 @@
 </style>
 
 <div class="pxs-announcement-bar" style="
-                color: {{ section.settings.announcement_color }};
-                background-color: {{ section.settings.announcement_background }};
-              display: flex;
-              padding:0;
-              ">{% if section.settings.announcement_text_mobile != blank %}
+                    color: {{ section.settings.announcement_color }};
+                    background-color: {{ section.settings.announcement_background }};
+                  display: flex;
+                  padding:0;
+                  ">{% if section.settings.announcement_text_mobile != blank %}
     <div class="pxs-announcement-bar-text-mobile">
       {{ section.settings.announcement_text_mobile | escape }}
     </div>
@@ -52,15 +52,17 @@
       {{ section.settings.announcement_text_l | escape }}
     {% endif %}
   </div>
-  <div class="pxs-announcement-bar-text-desktop" style="width:50%;">
+  <div
+    class="pxs-announcement-bar-text-desktop"
+    style="width:50%;">
     {% if section.settings.announcement_text_r != blank %}
       <a
         class="pxs-announcement-bar"
         style="
-                                            color: {{ section.settings.announcement_color }};
-                                            background-color: {{ section.settings.announcement_background }};
-                                            text-align:right;
-                                          "
+                                                      color: {{ section.settings.announcement_color }};
+                                                      background-color: {{ section.settings.announcement_background }};
+                                                      text-align:right;
+                                                    "
         {% if section.settings.announcement_link != blank %}
         href="{{ section.settings.announcement_link }}"
         {% endif %}>
