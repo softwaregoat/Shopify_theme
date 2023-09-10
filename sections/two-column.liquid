@@ -117,7 +117,7 @@
   <div class="one-half-column left">
     {{ left_image_tag }}
     <div class="overlay-content">
-      <div style="font-size:{{left_text_size}}">{{ left_text }}</div>
+      <div style="font-size:{{left_text_size}}px">{{ left_text }}</div>
       {% if left_btn_text != blank %}
         <div class="button-container">
           <a href="/{{ left_link }}">
@@ -131,7 +131,7 @@
   <div class="one-half-column right">
     {{ right_image_tag }}
     <div class="overlay-content">
-      <p style="font-size:{{right_text_size}}">{{ right_text }}</p>
+      <div style="font-size:{{right_text_size}}px">{{ right_text }}</div>
       {% if right_btn_text != blank %}
         <div class="button-container">
           <a href="/{{ right_link }}">
