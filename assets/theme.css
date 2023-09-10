@@ -467,6 +467,7 @@ img[data-rimg=lazy], img[data-rimg=loading] {
   animation-direction: alternate;
 }
 
+
 .age-gate__confirm_btn, html .shopify-payment-button .shopify-payment-button__button--unbranded, .collections .collection .browse, .featured-collections .collection .browse, .cart-mini__continue-shopping, .subcollection-link, .pxs-newsletter-form-button, .predictive-search__footer-button, .newsletter-wrap .submit, .shopify-challenge__button, .action-button, .promo-block--button, .promo-block--secondary .promo-block--button, .product-card-interaction, .disclosure__submit, .cart-mini-actions .action-button, html .shopify-payment-button .shopify-payment-button__button, .product-form-has-spb .submit, .product-form .product-submit, .password-page-field-wrap .submit, .cart-submit, .cart-update, .customer.addresses .edit-add-address .submit-wrap .action-button, .customer .account-form .submit-button, .slide .content .call-to-action, .countdown-timer__caption-button, .action-button.submit, .action-button.unavailable {
   font-family: "SF Mono",Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-style: normal;
@@ -12117,15 +12118,31 @@ in both native and antiscroll scrollbars appearing at the same time.
 .disclosure__toggle:hover {
   cursor: pointer;
 }
+
+
+/* .disclosure__toggle:after {
+  right: 20px;
+  width: 7px;
+  height: 7px;
+  transform: translateY(-45%) rotate(-45deg) !important;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  transform-origin: center center;
+} */
+[aria-expanded="true"]:after {
+  transform: translateY(0%) rotate(90deg);
+}
+
 .disclosure__toggle::after {
   position: absolute;
   top: 50%;
-  right: 11px;
-  width: 10px;
-  height: 7.5px;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' viewBox='0 0 8 6' fill='none'%3E%3Cpath class='icon-chevron-down-left' d='M4 4.5L7 1.5' stroke='black' stroke-width='1.25' stroke-linecap='square'/%3E%3Cpath class='icon-chevron-down-right' d='M4 4.5L1 1.5' stroke='black' stroke-width='1.25' stroke-linecap='square'/%3E%3C/svg%3E");
-  content: "";
-  transform: translateY(-50%);
+  right: 20px;
+  width: 7px;
+  height: 7px;
+  transform: translateY(-45%) rotate(-45deg);
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  transform-origin: center center;
 }
 @supports ((-webkit-mask-image: var(--disclosure-toggle-svg)) or (mask-image: var(--disclosure-toggle-svg))) {
   .disclosure__toggle::after {
