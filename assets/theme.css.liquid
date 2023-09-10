@@ -13445,7 +13445,7 @@ in both native and antiscroll scrollbars appearing at the same time.
   right: 20px;
   width: 7px;
   height: 7px;
-  transform: translateY(-45%) rotate(-45deg) !important;
+  transform: translateY(-45%) rotate(-45deg);
   border-left: 1px solid white;
   border-bottom: 1px solid white;
   transform-origin: center center;
@@ -13598,12 +13598,6 @@ noscript .disclosure-list {
   border-color: {{ settings.text-colour }}
   ;
   outline: none;
-}
-.disclosure__toggle::after {
-  right: 18px;
-  width: 10px;
-  height: 10px;
-  transform: translateY(-25%) rotate(90deg);
 }
 
 .disclosure-list {
