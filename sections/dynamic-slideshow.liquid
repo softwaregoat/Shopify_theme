@@ -112,12 +112,9 @@
               {% if alignment == 'left middle' %}
                 {% if button != blank %}
                   <div class="slide-half-content call-to-action-wrap" style="min-height: 50px;width:50%;">
-                    <span
-                      class="call-to-action"
-                      href="{{ link }}"
-                      style="color:{{ button_color }};">
-                      {{ button }}
-                    </span>
+                    <a href="/{{ link }}">
+                      <span class="call-to-action" style="color:{{ button_color }};">{{ button }}</span>
+                    </a>
                   </div>
                 {% endif %}
                 {% if caption != blank %}
@@ -134,10 +131,10 @@
                 {% if caption != blank %}
                   <div class="slide-half-content rotate-caption">
                     <h1 class="tagline rotate-text" style='
-                                                                                                                                                                                                                                                                                                                                                              font-family: {{ caption_font_family }}!important;
-                                                                                                                                                                                                                                                                                                                                                              font-style: {{ caption_font_style }};
-                                                                                                                                                                                                                                                                                                                                                              font-weight: {{ caption_font_weight }};
-                                                                                                                                                                                                                                                                                                                                                               text-align:left; font-size:{{caption_font_size}}px;color:{{ caption_color }};line-height:{{ caption_line_height }}; opacity:{{caption_opacity}};         transform-origin: right bottom;                                                                      transform: rotate({{ caption_rotation_angle }}deg) translate(100%, 0);'>{{ caption | escape }}</h1>
+                                                                                                                                                                                                                                                                                                                                                                                    font-family: {{ caption_font_family }}!important;
+                                                                                                                                                                                                                                                                                                                                                                                    font-style: {{ caption_font_style }};
+                                                                                                                                                                                                                                                                                                                                                                                    font-weight: {{ caption_font_weight }};
+                                                                                                                                                                                                                                                                                                                                                                                     text-align:left; font-size:{{caption_font_size}}px;color:{{ caption_color }};line-height:{{ caption_line_height }}; opacity:{{caption_opacity}};         transform-origin: right bottom;                                                                      transform: rotate({{ caption_rotation_angle }}deg) translate(100%, 0);'>{{ caption | escape }}</h1>
                   </div>
 
                 {% endif %}
