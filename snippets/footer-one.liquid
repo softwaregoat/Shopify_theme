@@ -19,6 +19,7 @@
   }
   .social-links {
     display: flex;
+    justify-content: center;
   }
   #main-footer .connect > li {
     padding: unset !important;
@@ -34,9 +35,9 @@
   }
 </style>
 <footer class="
-                                          main-footer
-                                          content-area
-                                        " id="main-footer">
+                                            main-footer
+                                            content-area
+                                          " id="main-footer">
 
 
 
@@ -61,10 +62,10 @@
     {% render 'footer-payments', paymentOptions: paymentOptions %}
     <div class="sub-footer__section--right">
       <ul class="
-                  connect
-                  clearfix
-                  module-count-{{ footerModules }}
-                  ">
+                            connect
+                            clearfix
+                            module-count-{{ footerModules }}
+                            ">
         {% unless settings.twitter-url.size == 0 and
  settings.facebook-url.size == 0 and
  settings.tiktok-url.size == 0 and
