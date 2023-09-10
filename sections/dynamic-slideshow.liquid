@@ -57,12 +57,9 @@
       {% assign alignment = block.settings.alignment %}
 
 
-      {%- assign caption_font_family = caption_font.family -%}
-      {%- assign caption_font_fallback_families = caption_font.fallback_families -%}
+      {%- assign caption_font_family = caption_font.family | append: ',' | append: caption_font.fallback_families -%}
       {%- assign caption_font_style = caption_font.style -%}
-      {%- assign caption_font_weight = caption_font.weight -%}
-
-
+      {%- assign caption_font_weight = caption_font.weight | times: 1 -%}
 
       {% if caption_font_size > 150 %}
         {% assign caption_font_size = 150 %}
@@ -91,8 +88,7 @@
         style="--image-aspect-ratio: {{ image.aspect_ratio }}"
         {% endif %}
         {{ block.shopify_attributes }}>
-        <div
-          class="image-wrap">
+        <div class="image-wrap">
           {% if block.settings.show_overlay and block.settings.background != blank %}
             {% assign opacity = block.settings.opacity | times: 0.01 %}
             {% assign overlay = block.settings.background | color_modify: 'alpha', opacity %}
@@ -125,8 +121,7 @@
                   </div>
                 {% endif %}
                 {% if caption != blank %}
-                  <div
-                    class="slide-half-content rotate-caption">
+                  <div class="slide-half-content rotate-caption">
                     <h1 class="tagline rotate-text" style="font-family:'{{caption_font_family}}'!important; font-style:{{caption_font_style}}; font-weight:{{caption_font_weight}}; text-align:left; font-size:{{caption_font_size}};color:{{ caption_color }}; line-height:{{ caption_line_height }}; opacity:{{caption_opacity}}; transform-origin: top left; transform: translateY(100%) rotate({{caption_rotation_angle}}deg);">
                       {{ caption | escape }}
                     </h1>
@@ -137,7 +132,8 @@
               {% if alignment == 'right middle' %}
 
                 {% if caption != blank %}
-                  <div class="slide-half-content rotate-caption">
+                  <div
+                    class="slide-half-content rotate-caption">
                     <h1 class="tagline rotate-text" style="font-family:'{{caption_font_family}}'!important; font-style:{{caption_font_style}}; font-weight:{{caption_font_weight}}; text-align:left; font-size:{{caption_font_size}};color:{{ caption_color }};line-height:{{ caption_line_height }}; transform:rotate({{ caption_rotation_angle }}deg);opacity:{{caption_opacity}};">{{ caption | escape }}</h1>
                   </div>
 
