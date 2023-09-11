@@ -1,8 +1,6 @@
 <div data-section-id="{{ section.id }}" data-section-type="dynamic-collection">
   {%- assign productsPerRow = section.settings.products_per_row -%}
-  {%- assign productsPerRowMobile = section.settings.products_per_row_mobile -%}
   {%- assign productsLimit = productsPerRow | times: section.settings.rows -%}
-  {%- assign productsLimitMobile = productsPerRowMobile | times: section.settings.rows -%}
   {%- assign sectionHeading = section.settings.title | escape -%}
   {%- assign border = section.settings.border -%}
   {%- assign productsCollection = section.settings.collection -%}
@@ -11,15 +9,15 @@
     class="
     home-section
     featured-collection
-                              clearfix
-                              content-area
+                                  clearfix
+                                  content-area
     {% if sectionHeading != blank %}has-heading{% endif %}
     {% if border %}has-border{% endif %}">
     {% if sectionHeading != blank %}
       <h2 class="section-title">{{ sectionHeading }}</h2>
     {% endif %}
     {% if productsCollection != blank %}
-      <ul class="desktop product-list row-of-{{ productsPerRow }}">
+      <ul class="product-list row-of-{{ productsPerRow }}">
         {% for product in collections[productsCollection].products limit: productsLimit %}
           {%
              render 'product-item',
@@ -30,7 +28,7 @@
         {% endfor %}
       </ul>
     {% else %}
-      <ul class="desktop product-list row-of-{{ productsPerRow }}">
+      <ul class="product-list row-of-{{ productsPerRow }}">
         {% for i in (1..productsLimit) %}
           {%
              render 'product-item',
@@ -39,29 +37,6 @@
         {% endfor %}
       </ul>
     {% endif %}
-
-    {% if productsCollection != blank %}
-      <ul class="mobile product-list row-of-{{ productsPerRowMobile }}">
-        {% for product in collections[productsCollection].products limit: productsLimitMobile %}
-          {%
-             render 'product-item',
-           product: product,
-           collection: productsCollection,
-           forloop: forloop,
-           onboarding: false, %}
-        {% endfor %}
-      </ul>
-    {% else %}
-      <ul class="mobile product-list row-of-{{ productsPerRowMobile }}">
-        {% for i in (1..productsLimitMobile) %}
-          {%
-             render 'product-item',
-           forloop: forloop,
-           onboarding: true, %}
-        {% endfor %}
-      </ul>
-    {% endif %}
-
   </section>
 </div>
 
@@ -100,14 +75,6 @@
         "id": "products_per_row",
         "label": "Number of products per row",
         "min": 2,
-        "max": 4,
-        "step": 1,
-        "default": 4
-      }, {
-        "type": "range",
-        "id": "products_per_row_mobile",
-        "label": "Number of products per row in mobile",
-        "min": 1,
         "max": 4,
         "step": 1,
         "default": 4
