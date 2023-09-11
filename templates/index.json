@@ -154,6 +154,31 @@
         "transition": "slide",
         "autoplay_interval": 5
       }
+    },
+    "5938b1bb-a4cb-410d-bfce-3644e3ea2ca8": {
+      "type": "two-column",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homehouse-SX2.jpg",
+        "left_text": "<p><strong>CHANGING ATMOSPHERE collab<\/strong><br\/>MAATCHES scented woods<br\/>CAAANDLES just wax<\/p>",
+        "left_text_size": 14,
+        "left_btn_text": "OPEN AAAIR",
+        "left_link": "",
+        "right_image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homehouse-DX3.jpg",
+        "right_text": "",
+        "right_text_size": 0,
+        "right_btn_text": "",
+        "right_link": ""
+      }
+    },
+    "64d6d98c-a319-4bfe-9fdc-2651c7fd587f": {
+      "type": "dynamic-collection",
+      "settings": {
+        "collection": "",
+        "title": "Featured collection",
+        "border": true,
+        "rows": 1,
+        "products_per_row": 3
+      }
     }
   },
   "order": [
@@ -162,6 +187,8 @@
     "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b",
     "c9c8acb3-8ec6-4da0-8014-794963fdf847",
     "dc7d6be7-713c-443a-a246-af89c1e8caa1",
-    "b2ba8f6a-e895-4b86-afe0-365633718707"
+    "b2ba8f6a-e895-4b86-afe0-365633718707",
+    "5938b1bb-a4cb-410d-bfce-3644e3ea2ca8",
+    "64d6d98c-a319-4bfe-9fdc-2651c7fd587f"
   ]
 }
