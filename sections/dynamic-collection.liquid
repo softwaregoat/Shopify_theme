@@ -11,15 +11,15 @@
     class="
     home-section
     featured-collection
-                          clearfix
-                          content-area
+                              clearfix
+                              content-area
     {% if sectionHeading != blank %}has-heading{% endif %}
     {% if border %}has-border{% endif %}">
     {% if sectionHeading != blank %}
       <h2 class="section-title">{{ sectionHeading }}</h2>
     {% endif %}
     {% if productsCollection != blank %}
-      <ul class="product-list row-of-{{ productsPerRow }}">
+      <ul class="desktop product-list row-of-{{ productsPerRow }}">
         {% for product in collections[productsCollection].products limit: productsLimit %}
           {%
              render 'product-item',
@@ -30,7 +30,7 @@
         {% endfor %}
       </ul>
     {% else %}
-      <ul class="product-list row-of-{{ productsPerRow }}">
+      <ul class="desktop product-list row-of-{{ productsPerRow }}">
         {% for i in (1..productsLimit) %}
           {%
              render 'product-item',
@@ -41,7 +41,7 @@
     {% endif %}
 
     {% if productsCollection != blank %}
-      <ul class="product-list row-of-{{ productsPerRowMobile }} mobile">
+      <ul class="mobile product-list row-of-{{ productsPerRowMobile }}">
         {% for product in collections[productsCollection].products limit: productsLimitMobile %}
           {%
              render 'product-item',
@@ -52,7 +52,7 @@
         {% endfor %}
       </ul>
     {% else %}
-      <ul class="product-list row-of-{{ productsPerRowMobile }} mobile">
+      <ul class="mobile product-list row-of-{{ productsPerRowMobile }}">
         {% for i in (1..productsLimitMobile) %}
           {%
              render 'product-item',
