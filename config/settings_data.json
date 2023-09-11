@@ -18,7 +18,7 @@
     "font_headings_secondary": "source_code_pro_n4",
     "font_accent": "source_code_pro_n4",
     "variant_options_style": "radio",
-    "enable_cart_redirection": true,
+    "enable_cart_redirection": false,
     "media_borders": false,
     "show-brand-names": false,
     "show_atc": true,
