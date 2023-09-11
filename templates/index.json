@@ -28,7 +28,7 @@
         "block-1"
       ],
       "settings": {
-        "desktop_height": "extra-large",
+        "desktop_height": "large",
         "mobile_height": "large",
         "full-width": true,
         "parallax": true,
