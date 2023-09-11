@@ -133,11 +133,11 @@
             "caption_line_height": 0.8,
             "caption_rotation_angle": -90,
             "button": "DISCOVER SKINCARE",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "link": "",
             "alignment": "left middle",
             "show_overlay": false,
-            "background": "#000",
+            "background": "#000000",
             "opacity": 20
           }
         }
@@ -149,7 +149,7 @@
         "desktop_height": "large",
         "mobile_height": "large",
         "full-width": true,
-        "parallax": false,
+        "parallax": true,
         "autoplay_enable": false,
         "transition": "slide",
         "autoplay_interval": 5
@@ -211,7 +211,7 @@
         "desktop_height": "large",
         "mobile_height": "large",
         "full-width": true,
-        "parallax": false,
+        "parallax": true,
         "autoplay_enable": false,
         "transition": "slide",
         "autoplay_interval": 5
