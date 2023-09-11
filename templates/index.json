@@ -118,6 +118,21 @@
         "products_per_row": 3
       }
     },
+    "3c078c95-d4e4-4d2a-9468-951505500300": {
+      "type": "two-column",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeskincare-SX2.jpg",
+        "left_text": "<p>BEFORE WALKING lotion<br\/>AFTER WALKING cream<br\/>FOOTMASK disposable mask<br\/>FEET&LEGS OVERNIGHT MASK<br\/>WELLEGS cooling gel<br\/>TONED X LEGS restorative cream<br\/>THE SCRUB<\/p>",
+        "left_text_size": 14,
+        "left_btn_text": "FEET&LEGS FIRST",
+        "left_link": "",
+        "right_image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeskincare-DX3.jpg",
+        "right_text": "<p>BODY RITUALS<br\/>FEET&LEGS every day<br\/>WHOLE BODY every day's sequence<br\/>NECK&FACE every day's sequence<br\/>FEET& LEGS deep treatment<br\/>BODY&ARMS deep treatment<br\/>DISCOVER MINI BOX<\/p>",
+        "right_text_size": 14,
+        "right_btn_text": "BEAUTY RITUALS",
+        "right_link": ""
+      }
+    },
     "2627a204-292a-4d76-adae-814c56ee274a": {
       "type": "dynamic-collection",
       "settings": {
@@ -197,6 +212,7 @@
     "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b",
     "c9c8acb3-8ec6-4da0-8014-794963fdf847",
     "dc7d6be7-713c-443a-a246-af89c1e8caa1",
+    "3c078c95-d4e4-4d2a-9468-951505500300",
     "2627a204-292a-4d76-adae-814c56ee274a",
     "b2ba8f6a-e895-4b86-afe0-365633718707",
     "5938b1bb-a4cb-410d-bfce-3644e3ea2ca8",
