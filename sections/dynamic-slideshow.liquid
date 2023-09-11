@@ -108,9 +108,11 @@
           <div class="mobile content-outer-wrap">
             <div class="content-inner-wrap">
               {% if caption != blank %}
-                <h1 class="tagline rotate-text" style='font-family: {{ caption_font_family }}!important;font-style: {{ caption_font_style }};font-weight: {{ caption_font_weight }};text-align:left; color:{{ caption_color }}; opacity:{{ caption_opacity }};line-height:{{ caption_line_height }};'>
-                  {{ caption | escape }}
-                </h1>
+                <div class="rotate-caption">
+                  <h1 class="tagline rotate-text" style='font-family: {{ caption_font_family }}!important;font-style: {{ caption_font_style }};font-weight: {{ caption_font_weight }};text-align:left; color:{{ caption_color }}; opacity:{{ caption_opacity }};line-height:{{ caption_line_height }};'>
+                    {{ caption | escape }}
+                  </h1>
+                </div>
               {% endif %}
 
               {% if button != blank %}
