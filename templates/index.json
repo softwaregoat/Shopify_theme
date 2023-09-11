@@ -43,7 +43,7 @@
 
       ],
       "settings": {
-        "collection": "",
+        "collection": "loved",
         "title": "this month's absolute loved one.",
         "border": false,
         "rows": 1,
