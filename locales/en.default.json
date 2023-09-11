@@ -5,8 +5,8 @@
       "out_of_stock": "Out of stock",
       "view_store_info": "View store information",
       "check_other_stores": "Check availability at other stores",
-      "available_for_pick_up_at_html": "Pickup available at <b>{{ location_name }}</b>",
-      "unavailable_for_pick_up_at_html": "Pickup currently unavailable at <b>{{ location_name }}</b>",
+      "available_for_pick_up_at_html": "Pickup available at <b>{{ location_name }}<\/b>",
+      "unavailable_for_pick_up_at_html": "Pickup currently unavailable at <b>{{ location_name }}<\/b>",
       "available_for_pick_up_at_time_html": "Pickup available, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "Pickup currently unavailable",
       "kilometers": "km",
@@ -135,7 +135,7 @@
       "from": "from",
       "now": "now",
       "view_details": "View product",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}"
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}"
     }
   },
   "age_gate": {
@@ -216,15 +216,15 @@
     "continue": "Continue shopping",
     "note": "Special instructions",
     "tax_and_shipping": "Taxes and shipping calculated at checkout",
-    "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
+    "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
     "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-    "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+    "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
     "submit": "Checkout",
     "update": "Update cart",
     "remove": "Remove",
     "stock_limit": "You can only add {{ quantity }} {{ title }} to your cart.",
     "shipping_calculator": {
-      "error": "Error: zip / postal code --error_message--",
+      "error": "Error: zip \/ postal code --error_message--",
       "submit": "Calculate Shipping",
       "working": "Calculating...",
       "rates_html": "There are --number_of_rates-- shipping rates available for --address--, starting at --rate--.",
@@ -294,8 +294,8 @@
       "city": "City",
       "country": "Country",
       "phone": "Phone",
-      "province": "State / Province",
-      "zip": "ZIP / Postal code",
+      "province": "State \/ Province",
+      "zip": "ZIP \/ Postal code",
       "set_as_default": "Set as Default Address?"
     },
     "login": {
@@ -378,7 +378,7 @@
       "visit_page": "Visit product page",
       "error_message_stock": "Unfortunately, we only have --stock-- in stock.",
       "error_message_general": "We were unable to add this product to your cart. Please try again later. Contact us if you continue to have issues.",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "tax_line_html": ""
     },
     "product_item": {
@@ -417,6 +417,51 @@
   "date_formats": {
     "short_month": "%b %d, %Y",
     "full_month": "%B %d, %Y",
-    "gift_card_expiry": "%d/%m/%y"
+    "gift_card_expiry": "%d\/%m\/%y"
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
   }
 }

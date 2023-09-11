@@ -5,8 +5,8 @@
       "out_of_stock": "Ausverkauft",
       "view_store_info": "Ladeninformationen anzeigen",
       "check_other_stores": "Überprüfen Sie die Verfügbarkeit in anderen Geschäften",
-      "available_for_pick_up_at_html": "Abholung verfügbar unter <b>{{ location_name }}</b>",
-      "unavailable_for_pick_up_at_html": "Abholung derzeit nicht verfügbar unter <b>{{ location_name }}</b>",
+      "available_for_pick_up_at_html": "Abholung verfügbar unter <b>{{ location_name }}<\/b>",
+      "unavailable_for_pick_up_at_html": "Abholung derzeit nicht verfügbar unter <b>{{ location_name }}<\/b>",
       "available_for_pick_up_at_time_html": "Abholung möglich, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "Abholung derzeit nicht verfügbar",
       "kilometers": "km",
@@ -134,7 +134,7 @@
     "complementary_product_block": {
       "from": "Aus",
       "now": "Jetzt",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "view_details": "Produkt anzeigen"
     }
   },
@@ -216,9 +216,9 @@
     "continue": "Weiter einkaufen.",
     "note": "Besondere Anweisungen",
     "tax_and_shipping": "Steuern und Versandkosten werden beim Checkout berechnet",
-    "taxes_and_shipping_policy_at_checkout_html": "zzgl. MwSt. und <a href=\"{{ link }}\">Versandkosten</a>",
+    "taxes_and_shipping_policy_at_checkout_html": "zzgl. MwSt. und <a href=\"{{ link }}\">Versandkosten<\/a>",
     "taxes_included_but_shipping_at_checkout": "inkl. MwSt. und zzgl. Versandkosten",
-    "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten</a>",
+    "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten<\/a>",
     "submit": "Bezahlen",
     "update": "Warenkorb aktualisieren",
     "remove": "Entfernen",
@@ -296,7 +296,7 @@
       "city": "Stadt",
       "country": "Land",
       "phone": "Telefon",
-      "province": "Staat/Region",
+      "province": "Staat\/Region",
       "zip": "Postleitzahl",
       "set_as_default": "Als Standardadresse festlegen?"
     },
@@ -380,7 +380,7 @@
       "visit_page": "Produkt ansehen",
       "error_message_stock": "Leider haben wir nur --stock-- auf Lager.",
       "error_message_general": "Wir konnten dieses Produkt nicht in Ihren Warenkorb legen. Bitte versuchen Sie es später noch einmal. Kontaktieren Sie uns, wenn Sie weiterhin Probleme haben.",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "tax_line_html": ""
     },
     "product_item": {
@@ -419,6 +419,51 @@
   "date_formats": {
     "short_month": "%b %d, %Y",
     "full_month": "%B %d, %Y",
-    "gift_card_expiry": "%d/%m/%y"
+    "gift_card_expiry": "%d\/%m\/%y"
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
   }
 }

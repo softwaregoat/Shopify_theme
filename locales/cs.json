@@ -5,8 +5,8 @@
       "out_of_stock": "Vyprodáno",
       "view_store_info": "Zobrazit informace o obchodu",
       "check_other_stores": "Zkontrolujte dostupnost v jiných obchodech",
-      "available_for_pick_up_at_html": "Vyzvednutí k dispozici na adrese <b>{{ location_name }}</b>",
-      "unavailable_for_pick_up_at_html": "Vyzvednutí momentálně není k dispozici na adrese <b>{{ location_name }}</b>",
+      "available_for_pick_up_at_html": "Vyzvednutí k dispozici na adrese <b>{{ location_name }}<\/b>",
+      "unavailable_for_pick_up_at_html": "Vyzvednutí momentálně není k dispozici na adrese <b>{{ location_name }}<\/b>",
       "available_for_pick_up_at_time_html": "Vyzvednutí k dispozici, {{pick_up_time}}",
       "unavailable_for_pick_up_at_time_html": "Vyzvednutí momentálně není k dispozici",
       "kilometers": "km",
@@ -134,7 +134,7 @@
     "complementary_product_block": {
       "from": "Z",
       "now": "Nyní",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "view_details": "Zobrazit produkt"
     }
   },
@@ -216,15 +216,15 @@
     "continue": "Pokračovat v nakupování.",
     "note": "Zvláštní instrukce",
     "tax_and_shipping": "Daně a poštovné se vypočítají v pokladně",
-    "taxes_and_shipping_policy_at_checkout_html": "Daně a <a href=\"{{ link }}\">poštovné</a> se vypočítá v pokladně",
+    "taxes_and_shipping_policy_at_checkout_html": "Daně a <a href=\"{{ link }}\">poštovné<\/a> se vypočítá v pokladně",
     "taxes_included_but_shipping_at_checkout": "Daně a poštovné se vypočítají v pokladně",
-    "taxes_included_and_shipping_policy_html": "Včetně daní. <a href=\"{{ link }}\">Poštovné</a> se vypočítá v pokladně.",
+    "taxes_included_and_shipping_policy_html": "Včetně daní. <a href=\"{{ link }}\">Poštovné<\/a> se vypočítá v pokladně.",
     "submit": "Zaplatit",
     "update": "Aktualizace košíku",
     "remove": "Odstranit",
     "stock_limit": "Můžete mít jen {{ quantity }} {{ title }} v košíku.",
     "shipping_calculator": {
-      "error": "Chyba: PSČ / Číslo pošty --error_message--",
+      "error": "Chyba: PSČ \/ Číslo pošty --error_message--",
       "submit": "Spočítat dopravu",
       "working": "Vypočítávání...",
       "rates_html": "Nalezli jsme --number_of_rates-- cen doprav dostupných pro --address-- od --rate--.",
@@ -296,8 +296,8 @@
       "city": "Město",
       "country": "Země",
       "phone": "Telefon",
-      "province": "Stát/Provincie",
-      "zip": "PSČ / Číslo pošty",
+      "province": "Stát\/Provincie",
+      "zip": "PSČ \/ Číslo pošty",
       "set_as_default": "Nastavit výchozí?"
     },
     "login": {
@@ -380,7 +380,7 @@
       "visit_page": "Navštivte stránku produktu",
       "error_message_stock": "Bohužel máme pouze --stock-- na skladě.",
       "error_message_general": "Tento produkt se nám nepodařilo přidat do košíku. Prosím zkuste to znovu později. Pokud budete mít i nadále problémy, kontaktujte nás.",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "tax_line_html": ""
     },
     "product_item": {
@@ -419,6 +419,51 @@
   "date_formats": {
     "short_month": "%b %d, %Y",
     "full_month": "%B %d, %Y",
-    "gift_card_expiry": "%d/%m/%y"
+    "gift_card_expiry": "%d\/%m\/%y"
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
   }
 }
