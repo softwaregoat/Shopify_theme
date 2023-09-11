@@ -5495,12 +5495,27 @@ table.mobile-layout tr:nth-child(even) td {
   padding-left: 0;
   margin-bottom: 50px;
 }
+.mobile.content-outer-wrap {
+  display: none;
+}
+.desktop.content-outer-wrap {
+  display: block;
+}
+
 @media(min-width: 720px) {
+
   .featured-collection .product-list .product.product-card-alt {
     margin: 0 0 30px;
   }
 }
 @media(max-width: 719px) {
+  .mobile.content-outer-wrap {
+    display: block;
+  }
+  .desktop.content-outer-wrap {
+    display: none;
+  }
+
   .featured-collection .product-list .product {
     margin: 0 0 35px;
     width: 100% !important;
