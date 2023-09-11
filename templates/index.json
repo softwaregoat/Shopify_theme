@@ -39,12 +39,16 @@
     },
     "eb5dcef8-60e9-435e-95ec-b72bf5ec1d69": {
       "type": "dynamic-collection",
+      "custom_css": [
+
+      ],
       "settings": {
         "collection": "",
-        "title": "This month's absolute loved one.",
+        "title": "this month's absolute loved one.",
         "border": false,
         "rows": 1,
-        "products_per_row": 3
+        "products_per_row": 3,
+        "products_per_row_mobile": 4
       }
     },
     "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b": {
@@ -101,12 +105,64 @@
         "right_btn_text": "",
         "right_link": ""
       }
+    },
+    "dc7d6be7-713c-443a-a246-af89c1e8caa1": {
+      "type": "dynamic-collection",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "collection": "",
+        "title": "discover 'N SERIES'",
+        "border": false,
+        "rows": 1,
+        "products_per_row": 3,
+        "products_per_row_mobile": 4
+      }
+    },
+    "b2ba8f6a-e895-4b86-afe0-365633718707": {
+      "type": "dynamic-slideshow",
+      "blocks": {
+        "template--20719758541085__b2ba8f6a-e895-4b86-afe0-365633718707-feature-1": {
+          "type": "feature",
+          "settings": {
+            "caption": "Introduce customers to your shop with lifestyle imagery and product photography.",
+            "caption_font_size": 15,
+            "caption_font": "work_sans_n6",
+            "caption_color": "#FFFFFF",
+            "caption_opacity": 20,
+            "caption_line_height": 1,
+            "caption_rotation_angle": -90,
+            "button": "Your call to action button",
+            "button_color": "#FFFFFF",
+            "link": "",
+            "alignment": "center-center",
+            "show_overlay": false,
+            "background": "#000",
+            "opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--20719758541085__b2ba8f6a-e895-4b86-afe0-365633718707-feature-1"
+      ],
+      "settings": {
+        "desktop_height": "natural",
+        "mobile_height": "natural",
+        "full-width": true,
+        "parallax": false,
+        "autoplay_enable": false,
+        "transition": "slide",
+        "autoplay_interval": 5
+      }
     }
   },
   "order": [
     "dynamic-slideshow-1",
     "eb5dcef8-60e9-435e-95ec-b72bf5ec1d69",
     "0b32ade9-3523-4ea4-bd43-5cb7f00dc50b",
-    "c9c8acb3-8ec6-4da0-8014-794963fdf847"
+    "c9c8acb3-8ec6-4da0-8014-794963fdf847",
+    "dc7d6be7-713c-443a-a246-af89c1e8caa1",
+    "b2ba8f6a-e895-4b86-afe0-365633718707"
   ]
 }
