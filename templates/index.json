@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-top-1.jpg",
             "caption": "we are here 'cause we're simply\nuncoven-    tional",
-            "caption_font_size": 130,
+            "caption_font_size": 120,
             "caption_font": "playfair_display_n4",
             "caption_color": "#e1cb10",
             "caption_opacity": 100,
@@ -28,7 +28,7 @@
         "block-1"
       ],
       "settings": {
-        "desktop_height": "medium",
+        "desktop_height": "large",
         "mobile_height": "large",
         "full-width": true,
         "parallax": true,
