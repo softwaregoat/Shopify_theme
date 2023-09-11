@@ -5472,9 +5472,15 @@ table.mobile-layout tr:nth-child(even) td {
 .featured-collection .mobile.product-list {
   display: none;
 }
+.featured-collection .desktop.product-list {
+  display: block;
+}
 @media(max-width: 940px) {
   .featured-collection .desktop.product-list {
     display: none;
+  }
+  .featured-collection .mobile.product-list {
+    display: block;
   }
   .featured-collection .product-list.row-of-2 .product,
   .featured-collection .product-list.row-of-2 .promo-block,
