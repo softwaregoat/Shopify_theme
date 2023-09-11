@@ -124,25 +124,7 @@
         "template--20719758541085__de02b9f9-a070-4659-b373-34fe8bf6151f-feature-1": {
           "type": "feature",
           "settings": {
-            "caption": "Introduce customers to your shop with lifestyle imagery and product photography.",
-            "caption_font_size": 15,
-            "caption_font": "work_sans_n6",
-            "caption_color": "#FFFFFF",
-            "caption_opacity": 20,
-            "caption_line_height": 1,
-            "caption_rotation_angle": -90,
-            "button": "Your call to action button",
-            "button_color": "#FFFFFF",
-            "link": "",
-            "alignment": "center-center",
-            "show_overlay": false,
-            "background": "#000",
-            "opacity": 20
-          }
-        },
-        "template--20719758541085__de02b9f9-a070-4659-b373-34fe8bf6151f-feature-2": {
-          "type": "feature",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/NEW-STOREAAA-IMG-homeskincare-1.jpg",
             "caption": "Introduce customers to your shop with lifestyle imagery and product photography.",
             "caption_font_size": 15,
             "caption_font": "work_sans_n6",
@@ -161,14 +143,13 @@
         }
       },
       "block_order": [
-        "template--20719758541085__de02b9f9-a070-4659-b373-34fe8bf6151f-feature-1",
-        "template--20719758541085__de02b9f9-a070-4659-b373-34fe8bf6151f-feature-2"
+        "template--20719758541085__de02b9f9-a070-4659-b373-34fe8bf6151f-feature-1"
       ],
       "settings": {
         "desktop_height": "large",
         "mobile_height": "large",
         "full-width": true,
-        "parallax": true,
+        "parallax": false,
         "autoplay_enable": false,
         "transition": "slide",
         "autoplay_interval": 5
