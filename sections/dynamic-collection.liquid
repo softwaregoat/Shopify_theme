@@ -10,26 +10,15 @@
     class="
     home-section
     featured-collection
-              clearfix
-              content-area
+                  clearfix
+                  content-area
     {% if sectionHeading != blank %}has-heading{% endif %}
     {% if border %}has-border{% endif %}">
     {% if sectionHeading != blank %}
       <h2 class="section-title">{{ sectionHeading }}</h2>
     {% endif %}
     {% if productsCollection != blank %}
-      <ul class="product-list row-of-{{ productsPerRow }} desktop">
-        {% for product in collections[productsCollection].products limit: productsLimit %}
-          {%
-             render 'product-item',
-           product: product,
-           collection: productsCollection,
-           forloop: forloop,
-           onboarding: false, %}
-        {% endfor %}
-      </ul>
-
-      <ul class="product-list row-of-{{ productsPerRowMobile }} mobile">
+      <ul class="product-list row-of-{{ productsPerRow }}">
         {% for product in collections[productsCollection].products limit: productsLimit %}
           {%
              render 'product-item',
@@ -49,6 +38,29 @@
         {% endfor %}
       </ul>
     {% endif %}
+
+    {% if productsCollection != blank %}
+      <ul class="product-list row-of-{{ productsPerRowMobile }} mobile">
+        {% for product in collections[productsCollection].products limit: productsLimit %}
+          {%
+             render 'product-item',
+           product: product,
+           collection: productsCollection,
+           forloop: forloop,
+           onboarding: false, %}
+        {% endfor %}
+      </ul>
+    {% else %}
+      <ul class="product-list row-of-{{ productsPerRowMobile }} mobile">
+        {% for i in (1..productsLimit) %}
+          {%
+             render 'product-item',
+           forloop: forloop,
+           onboarding: true, %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+
   </section>
 </div>
 
