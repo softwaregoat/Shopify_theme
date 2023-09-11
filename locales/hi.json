@@ -5,8 +5,8 @@
       "out_of_stock": "स्टॉक ख़त्म",
       "view_store_info": "स्टोर की जानकारी देखें",
       "check_other_stores": "अन्य दुकानों पर उपलब्धता की जाँच करें",
-      "available_for_pick_up_at_html": "पिकअप <b>{{ location_name }}</b> पर उपलब्ध है",
-      "unavailable_for_pick_up_at_html": "वर्तमान में पिकअप <b>{{ location_name }}</b> पर अनुपलब्ध है",
+      "available_for_pick_up_at_html": "पिकअप <b>{{ location_name }}<\/b> पर उपलब्ध है",
+      "unavailable_for_pick_up_at_html": "वर्तमान में पिकअप <b>{{ location_name }}<\/b> पर अनुपलब्ध है",
       "available_for_pick_up_at_time_html": "पिकअप उपलब्ध है, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "वर्तमान में पिकअप अनुपलब्ध है",
       "kilometers": "km",
@@ -134,7 +134,7 @@
     "complementary_product_block": {
       "from": "से",
       "now": "अब",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "view_details": "उत्पाद देखें"
     }
   },
@@ -216,15 +216,15 @@
     "continue": "खरीदारी जारी रखें",
     "note": "विशेष निर्देश",
     "tax_and_shipping": "चेकआउट के दौरान कर और शिपिंग गणना की गई",
-    "taxes_and_shipping_policy_at_checkout_html": "चेकआउट के दौरान कर और <a href=\"{{ link }}\">शिपिंग</a> गणना की गई",
+    "taxes_and_shipping_policy_at_checkout_html": "चेकआउट के दौरान कर और <a href=\"{{ link }}\">शिपिंग<\/a> गणना की गई",
     "taxes_included_but_shipping_at_checkout": "चेकआउट के दौरान कर शामिल किया और शिपिंग की गणना की गई",
-    "taxes_included_and_shipping_policy_html": "कर शामिल है. चेकआउट के दौरान <a href=\"{{ link }}\">शिपिंग</a> की गणना की गई",
+    "taxes_included_and_shipping_policy_html": "कर शामिल है. चेकआउट के दौरान <a href=\"{{ link }}\">शिपिंग<\/a> की गणना की गई",
     "submit": "चेक आउट",
     "update": "कार्ट अपडेट करें",
     "remove": "हटाए",
     "stock_limit": "आपके कार्ट में केवल {{ quantity }} {{ title }} हो सकते हैं।",
     "shipping_calculator": {
-      "error": "त्रुटि: ज़िप / पोस्टल कोड --error_message--",
+      "error": "त्रुटि: ज़िप \/ पोस्टल कोड --error_message--",
       "submit": "शिपिंग की गणना करना",
       "working": "गिना जा रहा है...",
       "rates_html": "हमने --rate-- से शुरू होते हुए --number_of_rates-- शिपिंग रेट --address-- के लिए उपलब्ध पाया हैं",
@@ -296,8 +296,8 @@
       "city": "शहर",
       "country": "देश",
       "phone": "फ़ोन",
-      "province": "राज्य / प्रांत",
-      "zip": "ज़िप / पोस्टल कोड",
+      "province": "राज्य \/ प्रांत",
+      "zip": "ज़िप \/ पोस्टल कोड",
       "set_as_default": "डिफ़ॉल्ट पते के रूप में सेट करें?"
     },
     "login": {
@@ -380,7 +380,7 @@
       "visit_page": "उत्पाद पृष्ठ पर जाएं",
       "error_message_stock": "दुर्भाग्य से, हमारे पास स्टॉक में केवल --stock-- हैं।",
       "error_message_general": "हम आपके कार्ट में इस उत्पाद को जोड़ने में असमर्थ थे। बाद में पुन: प्रयास करें। यदि आपके पास समस्याएँ हैं, तो हमसे संपर्क करें।",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "tax_line_html": ""
     },
     "product_item": {
@@ -419,6 +419,51 @@
   "date_formats": {
     "short_month": "%b %d, %Y",
     "full_month": "%B %d, %Y",
-    "gift_card_expiry": "%d/%m/%y"
+    "gift_card_expiry": "%d\/%m\/%y"
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
   }
 }

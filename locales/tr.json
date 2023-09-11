@@ -5,8 +5,8 @@
       "out_of_stock": "Stoklar tükendi",
       "view_store_info": "Mağaza bilgilerini görüntüleyin",
       "check_other_stores": "Diğer mağazalardaki stok durumunu kontrol edin",
-      "available_for_pick_up_at_html": "Teslim alma <b>{{ location_name }}</b> adresinden alınabilir",
-      "unavailable_for_pick_up_at_html": "Şu anda <b>{{ location_name }}</b> konumunda teslim alınamıyor",
+      "available_for_pick_up_at_html": "Teslim alma <b>{{ location_name }}<\/b> adresinden alınabilir",
+      "unavailable_for_pick_up_at_html": "Şu anda <b>{{ location_name }}<\/b> konumunda teslim alınamıyor",
       "available_for_pick_up_at_time_html": "Teslim alma mevcut, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "Şu anda teslim alınamıyor",
       "kilometers": "km",
@@ -42,7 +42,7 @@
       "nav_product_thumbnail": "başparmak tırnağı",
       "close": "Kapat",
       "total_reviews": "toplam değerlendirme",
-      "star_reviews_info": "{{ rating_value }}/{{ rating_max }} yıldız"
+      "star_reviews_info": "{{ rating_value }}\/{{ rating_max }} yıldız"
     },
     "account": "Hesap",
     "name": "İsim",
@@ -93,7 +93,7 @@
       "cart": "Sepet"
     },
     "pagination": {
-      "summary": "Sayfa {{ current_page }}/{{ pages }}",
+      "summary": "Sayfa {{ current_page }}\/{{ pages }}",
       "previous": "Önceki",
       "next": "Sonraki",
       "seo_title": "Sayfa"
@@ -134,7 +134,7 @@
     "complementary_product_block": {
       "from": "İtibaren",
       "now": "Şimdi",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "view_details": "Ürünü görüntüle"
     }
   },
@@ -216,9 +216,9 @@
     "continue": "Alışverişe devam et.",
     "note": "Özel talimatları",
     "tax_and_shipping": "Vergiler ve kargo, ödeme sayfasında hesaplanır",
-    "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\">kargo</a>, ödeme sayfasında hesaplanır",
+    "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\">kargo<\/a>, ödeme sayfasında hesaplanır",
     "taxes_included_but_shipping_at_checkout": "Vergi dahildir ve kargo, ödeme sayfasında hesaplanır",
-    "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\">Kargo</a>, ödeme sayfasında hesaplanır.",
+    "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\">Kargo<\/a>, ödeme sayfasında hesaplanır.",
     "submit": "Ödeme yeri",
     "update": "Sepeti Güncelle",
     "remove": "Kaldır",
@@ -296,7 +296,7 @@
       "city": "Şehir",
       "country": "Ülke",
       "phone": "Telefon",
-      "province": "Eyalet / İl",
+      "province": "Eyalet \/ İl",
       "zip": "Posta Kodu",
       "set_as_default": "Varsayılana ayarla?"
     },
@@ -380,7 +380,7 @@
       "visit_page": "Ürün sayfasını ziyaret edin",
       "error_message_stock": "Ne yazık ki, stoklarımızda sadece --stock-- tane var.",
       "error_message_general": "Bu ürünü alışveriş sepetinize ekleyemedik. Lütfen daha sonra tekrar deneyiniz. Sorun yaşamaya devam ederseniz bize ulaşın.",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "tax_line_html": ""
     },
     "product_item": {
@@ -419,6 +419,51 @@
   "date_formats": {
     "short_month": "%b %d, %Y",
     "full_month": "%B %d, %Y",
-    "gift_card_expiry": "%d/%m/%y"
+    "gift_card_expiry": "%d\/%m\/%y"
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
   }
 }
