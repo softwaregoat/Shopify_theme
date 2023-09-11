@@ -5511,6 +5511,15 @@ table.mobile-layout tr:nth-child(even) td {
 @media(max-width: 719px) {
   .mobile.content-outer-wrap {
     display: block;
+    position: absolute;
+  }
+  .mobile.content-outer-wrap .content-inner-wrap {
+    display: block;
+  }
+  .mobile.content-outer-wrap .slide-half-content {}
+  h1.tagline.rotate-text {
+    font-size: 60px !important;
+    width: 400px;
   }
   .desktop.content-outer-wrap {
     display: none;
@@ -6332,16 +6341,6 @@ table.mobile-layout tr:nth-child(even) td {
   display: flex;
 }
 @media(max-width: 719px) {
-  .slide .content-inner-wrap {
-    ;
-    /* position: static; */
-    /* top: unset;
-    bottom: 160px; */
-  }
-  h1.tagline.rotate-text {
-    font-size: 60px !important;
-    width: 400px;
-  }
   .content-inner-wrap .call-to-action {
     bottom: 100px !important;
     padding: 10px;
