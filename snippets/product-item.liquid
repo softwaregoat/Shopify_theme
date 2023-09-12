@@ -42,7 +42,7 @@
         {{ 'onboarding.product_name' | t }}
       {% else %}
         <a href="{{ product.url | within: collection }}">
-          {{ product.title }}
+          /{{ product.title }}
         </a>
       {% endif %}
     </h2>
