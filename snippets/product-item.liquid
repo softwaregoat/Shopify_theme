@@ -49,7 +49,7 @@
           </a>
         {% else %}
             <a href="{{ product.url | within: collection }}">
-            /
+            / {{ product.title }}
           </a>
         {% endif %}
         {% endfor %}
