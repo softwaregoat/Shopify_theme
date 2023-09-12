@@ -73,6 +73,9 @@
                   {{ product.title }}
                 {% endif %}
               </h1>
+            <br><span class="product-subtitle">
+        {{ product.metafields.descriptors.subtitle  }}
+          </span>
             {% when 'price' %}
               <div
                 class="
