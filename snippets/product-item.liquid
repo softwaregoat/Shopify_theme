@@ -41,9 +41,17 @@
       {% if onboarding %}
         {{ 'onboarding.product_name' | t }}
       {% else %}
-        <a href="{{ product.url | within: collection }}">
-          /{{ product.title }}
-        </a>
+
+        {%  if collection title == essence  %}
+          <a href="{{ product.url | within: collection }}">
+            {{ product.title }}
+          </a>
+        {% else %}
+            <a href="{{ product.url | within: collection }}">
+            /{{ product.title }}
+          </a>
+        {% endif %}
+        
       {% endif %}
     </h2>
     {% assign itemType = product %}
