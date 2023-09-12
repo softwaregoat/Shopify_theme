@@ -65,7 +65,7 @@
           "use_modal_dialog": false,
           "use_currency_for_region": false,
           "switcher_position": "header",
-          "show_flags": true,
+          "show_flags": false,
           "language_label": "language-code",
           "language_country_mapping": "",
           "countries_filter": "en,es",
