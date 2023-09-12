@@ -42,7 +42,7 @@
         {{ 'onboarding.product_name' | t }}
       {% else %}
 
-        {%  if collection title == essence  %}
+        {%  if product in collections['essence'].products %}
           <a href="{{ product.url | within: collection }}">
             {{ product.title }}
           </a>
