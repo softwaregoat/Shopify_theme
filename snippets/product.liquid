@@ -60,7 +60,9 @@
                 {% render block %}
               </div>
             {% when 'title' %}
-              <h1
+             
+         {% if product.tags contains 'essence' %}      
+        <h1
                 class="
                   product__title
                   {{ block_classes }}
@@ -73,9 +75,24 @@
                   {{ product.title }}
                 {% endif %}
               </h1>
-            <br><span class="product-subtitle">
-        {{ product.metafields.descriptors.subtitle  }}
-          </span>
+        {% else %}
+ <h1
+                class="
+                  product__title
+                  {{ block_classes }}
+                "
+                {{ block.shopify_attributes }}
+              >
+                {% if onboarding %}
+                  {{ 'onboarding.product_name' | t }}
+                {% else %}
+                  /{{ product.title }}
+                {% endif %}
+              </h1>    
+        {% endif %}
+
+
+        
             {% when 'price' %}
               <div
                 class="
