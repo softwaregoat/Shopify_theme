@@ -42,8 +42,8 @@
         {{ 'onboarding.product_name' | t }}
       {% else %}
 
-      {% for collection in product.collections %}
-        {% if collection.title contains 'essence' %}
+
+        {% if product.tags contains 'essence' %}
           <a href="{{ product.url | within: collection }}">
             {{ product.title }}
           </a>
@@ -52,7 +52,6 @@
             / {{ product.title }}
           </a>
         {% endif %}
-        {% endfor %}
         
       {% endif %}
     </h2>
