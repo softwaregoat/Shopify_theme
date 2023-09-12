@@ -69,7 +69,7 @@
           "language_label": "language-code",
           "language_country_mapping": "",
           "countries_filter": "en,es",
-          "custom_css": "",
+          "custom_css": ".tl-code {\n    text-transform: lowercase;\n}",
           "header_switcher_reference_element": ".main-header--tools-group",
           "header_switcher_relative_position": "in-element",
           "mobile_menu_switcher_reference_element": "",
