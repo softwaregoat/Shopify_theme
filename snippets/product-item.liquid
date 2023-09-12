@@ -47,7 +47,7 @@
           <a href="{{ product.url | within: collection }}">
             {{ product.title }}
           </a>
-        {% else %}
+        {% else if %}
             <a href="{{ product.url | within: collection }}">
             /{{ product.title }}
           </a>
