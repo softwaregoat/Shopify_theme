@@ -39,7 +39,7 @@
     "checkout_body_background_color": "#e5e3df",
     "checkout_input_background_color_mode": "transparent",
     "checkout_heading_font": "Playfair Display",
-    "checkout_body_font": "Abel",
+    "checkout_body_font": "Open Sans",
     "checkout_accent_color": "#e1cb10",
     "checkout_button_color": "#e1cb10",
     "quickshop_variant_options_style": "select",
