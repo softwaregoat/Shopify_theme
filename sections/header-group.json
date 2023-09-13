@@ -37,7 +37,7 @@
         "live_search_enabled": true,
         "menu": "main-menu",
         "menu_color": "#ffffff",
-        "scrolling_menu_color": "#000000",
+        "scrolling_menu_color": "#393939",
         "top-level-columns": "one-column"
       }
     }
