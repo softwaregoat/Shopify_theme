@@ -67,12 +67,6 @@
             "collapsible_tab_heading": "PRODUCT APPARENCE AND TEXTURE",
             "collapsible_tab_text": "<p>{{ product.metafields.custom.product_appearance_and_texture | metafield_tag }}<\/p>"
           }
-        },
-        "3485158f-5f2b-4c70-b2e7-ee8caeac3749": {
-          "type": "custom-liquid",
-          "settings": {
-            "custom_liquid": "ALL ABOUT SKINCARE FORMULATION"
-          }
         }
       },
       "block_order": [
@@ -85,8 +79,7 @@
         "fcdfff86-37d3-4b69-9c05-fb9f23fa010b",
         "b9029624-af25-436d-b586-65665bb4e900",
         "91d654f5-70fe-4a1f-b002-42e5c0209bc1",
-        "ac8caf76-8184-40a9-83d4-5f59c6c4b0cb",
-        "3485158f-5f2b-4c70-b2e7-ee8caeac3749"
+        "ac8caf76-8184-40a9-83d4-5f59c6c4b0cb"
       ],
       "settings": {
         "details_alignment": "left",
