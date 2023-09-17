@@ -1,1 +1,16 @@
+<<<<<<< HEAD
 {"sections":{"pf-43b8ef29":{"type":"pf-43b8ef29","settings":{}}},"order":["pf-43b8ef29"]}
+=======
+{
+  "sections": {
+    "pf-43b8ef29": {
+      "type": "pf-43b8ef29",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "pf-43b8ef29"
+  ]
+}
+>>>>>>> 3877207cd76e980306c76171fbbca43de07fb16c
