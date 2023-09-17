@@ -16998,7 +16998,7 @@ img[data-rimg=loaded] {
 }
 span.call-to-action:hover {
   background-color: white !important;
-  color: black !important;
+  color: #393939 !important;
   opacity: 0.8;
   /* border: 2px solid black !important; */
 }
@@ -17017,12 +17017,12 @@ span.call-to-action {
    text-transform: lowercase;
 }
 .age-gate__confirm_btn:hover, html .shopify-payment-button .shopify-payment-button__button--unbranded:hover, .collections .collection .browse:hover, .featured-collections .collection .browse:hover, .cart-mini__continue-shopping:hover, .subcollection-link:hover, .pxs-newsletter-form-button:hover, .predictive-search__footer-button:hover, .newsletter-wrap .submit:hover, .shopify-challenge__button:hover, .action-button:hover, .promo-block--button:hover, .product-card-interaction:hover, .disclosure__submit:hover, html .shopify-payment-button .shopify-payment-button__button:hover, .product-form-has-spb .submit:hover, .product-form .product-submit:hover, .password-page-field-wrap .submit:hover, .cart-submit:hover, .cart-update:hover, .customer.addresses .edit-add-address .submit-wrap .action-button:hover, .customer .account-form .submit-button:hover, .slide .content .call-to-action:hover, .countdown-timer__caption-button:hover {
-    color: #393939;
-    background-color: transparent;
+    color: #393939 !important;
+    background-color: transparent !important;
     border: 1px solid #393939 !important
 }
 
-.product-card-interaction-quickshop, .complementary-products .flickity-prev-next-button, .collections .collection .browse, .featured-collections .collection .browse, .product-form-has-spb .submit, .predictive-search__footer-button, .action-button.desaturated, .promo-block--secondary .promo-block--button, .cart-mini__continue-shopping, .countdown-timer__caption-button.countdown-timer__caption-button--secondary {
+.product-card-interaction-quickshop, .complementary-products .flickity-prev-next-button, .collections .collection .browse, .featured-collections .collection .browse, .predictive-search__footer-button, .promo-block--secondary .promo-block--button, .cart-mini__continue-shopping, .countdown-timer__caption-button.countdown-timer__caption-button--secondary {
     color: #393939;
     background-color: transparent;
     border: 1px solid #393939 !important;
@@ -17035,9 +17035,53 @@ span.call-to-action {
 }
 
 .main-header--tools .mini-cart-wrap {
-    left: -5px;
+    left: -10px;
 }
 
 .main-header--tools .mini-cart-wrap .item-count {
     left: calc(100% - 2px);
+}
+
+.product__title {
+    font-family: "Playfair Display",Source Code Pro,sans-serif;
+    font-weight: bold !important;
+}
+
+.product-subtitle {
+    font-size: 14px;
+}
+
+.product-subtitle-main {
+    font-size: 18px;
+}
+.option-value-input:checked + .option-value-name {
+   text-transform: lowercase !important;
+   font-weight: normal !important;
+}
+
+.product-form-has-spb .submit {
+    color: #393939 !important;
+    background-color: #E1CB10 !important;
+    font-weight: normal !important;
+    border: none !important;
+}
+
+.has-no-variants .product-form .product-submit {
+    font-weight: normal !important;
+}
+
+.product__price.product-block--border {
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.product .title a, .quick-shop-content .title a, .product-area .title a, .product .title a:hover, .quick-shop-content .title a:hover, .product-area .title a:hover {
+    color: #393939;
+    font-family: "Playfair Display",Source Code Pro,sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.badge-sale, .badge-new {
+    background-color: #E1CB10 !important;
+    color: #393939;
 }

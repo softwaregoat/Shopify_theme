@@ -41,9 +41,20 @@
       {% if onboarding %}
         {{ 'onboarding.product_name' | t }}
       {% else %}
-        <a href="{{ product.url | within: collection }}">
-          {{ product.title }}
-        </a>
+
+
+        {% if product.tags contains 'perfume' %}
+          <a href="{{ product.url | within: collection }}">
+            {{ product.title }}
+          </a>
+        {% else %}
+            <a href="{{ product.url | within: collection }}">
+            /{{ product.title }}
+          </a>
+        {% endif %}
+        <br><span class="product-subtitle">
+        {{ product.metafields.descriptors.subtitle  }}
+          </span>
       {% endif %}
     </h2>
     {% assign itemType = product %}

@@ -1,21 +1,101 @@
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n4.c60eff80c85b729b1eec1d8aa62c6634592a5112.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=f937dacb16aeff65e68b907e1e245184a09e05e6d01c2ffc6fdf35e91f9bd460") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n4.7f421e77d010b4ff2a22a0cf3c24b022b49a79fe.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=b7c070d963f635097e9d2be10a6f71e0444210872cf1fb85a0d2f8c42168b50a") format("woff");
+}
 
 
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n7.008e88c81552a2211bfd301db1683d87805b499a.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=b205507c3a6a0774b3334c69ab7a5c95cde4ce401bfc3273d7e7aa31cc748061") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n7.2b9c9337ec9af77d57e04e5a0b4ed29b6bf05d5a.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=a88a8b1a2f895837b3bf129df76599172892dccc8b6c23703e12acf893fff4b9") format("woff");
+}
 
   
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n4.c60eff80c85b729b1eec1d8aa62c6634592a5112.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=f937dacb16aeff65e68b907e1e245184a09e05e6d01c2ffc6fdf35e91f9bd460") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n4.7f421e77d010b4ff2a22a0cf3c24b022b49a79fe.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=b7c070d963f635097e9d2be10a6f71e0444210872cf1fb85a0d2f8c42168b50a") format("woff");
+}
 
 
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n7.008e88c81552a2211bfd301db1683d87805b499a.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=b205507c3a6a0774b3334c69ab7a5c95cde4ce401bfc3273d7e7aa31cc748061") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n7.2b9c9337ec9af77d57e04e5a0b4ed29b6bf05d5a.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=a88a8b1a2f895837b3bf129df76599172892dccc8b6c23703e12acf893fff4b9") format("woff");
+}
 
   
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n2.087fd7162d232b1098784def24ca178a1a02fd2b.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=1cdae9b135a70bd94cc4f3fa14ae2a77f7a6e82fdef07b8b0ecfdda721d193bb") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n2.72cab196cbae2df6cc03763ae0c3f1f7ddd3b4a1.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=1934c2aef63c1e4ab3248ef52d7cbd2e24abfb9fb20f98984ed05ff784eddc8e") format("woff");
+}
 
   
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n4.c60eff80c85b729b1eec1d8aa62c6634592a5112.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=f937dacb16aeff65e68b907e1e245184a09e05e6d01c2ffc6fdf35e91f9bd460") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n4.7f421e77d010b4ff2a22a0cf3c24b022b49a79fe.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=b7c070d963f635097e9d2be10a6f71e0444210872cf1fb85a0d2f8c42168b50a") format("woff");
+}
 
 
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n7.008e88c81552a2211bfd301db1683d87805b499a.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=b205507c3a6a0774b3334c69ab7a5c95cde4ce401bfc3273d7e7aa31cc748061") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n7.2b9c9337ec9af77d57e04e5a0b4ed29b6bf05d5a.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=a88a8b1a2f895837b3bf129df76599172892dccc8b6c23703e12acf893fff4b9") format("woff");
+}
 
   
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n4.c60eff80c85b729b1eec1d8aa62c6634592a5112.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=f937dacb16aeff65e68b907e1e245184a09e05e6d01c2ffc6fdf35e91f9bd460") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n4.7f421e77d010b4ff2a22a0cf3c24b022b49a79fe.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=b7c070d963f635097e9d2be10a6f71e0444210872cf1fb85a0d2f8c42168b50a") format("woff");
+}
 
 
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n7.008e88c81552a2211bfd301db1683d87805b499a.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=b205507c3a6a0774b3334c69ab7a5c95cde4ce401bfc3273d7e7aa31cc748061") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n7.2b9c9337ec9af77d57e04e5a0b4ed29b6bf05d5a.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=a88a8b1a2f895837b3bf129df76599172892dccc8b6c23703e12acf893fff4b9") format("woff");
+}
 
   
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n2.087fd7162d232b1098784def24ca178a1a02fd2b.woff2?h1=YWFhdW5icmFuZGVkLnVz&hmac=1cdae9b135a70bd94cc4f3fa14ae2a77f7a6e82fdef07b8b0ecfdda721d193bb") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_code_pro/sourcecodepro_n2.72cab196cbae2df6cc03763ae0c3f1f7ddd3b4a1.woff?h1=YWFhdW5icmFuZGVkLnVz&hmac=1934c2aef63c1e4ab3248ef52d7cbd2e24abfb9fb20f98984ed05ff784eddc8e") format("woff");
+}
 
   
 
@@ -76,7 +156,7 @@
   }
 }
 .template-gift_card {
-  font-family: "SF Mono",Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: "Source Code Pro",sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -166,7 +246,7 @@
   animation: fadein 0.5s ease-in-out both 0.4s;
 }
 .template-gift_card .shop-title {
-  font-family: "SF Mono",Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: "Source Code Pro",sans-serif;
   font-style: normal;
   font-weight: 400;
   display: block;
@@ -215,9 +295,9 @@
 .template-gift_card .gift-card-header h2 {
   float: left;
   margin: 0.12em 0;
-  font-family: "SF Mono",Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: "Source Code Pro",sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
 }
 .template-gift_card .gift-card-header .tag {
   float: right;
@@ -374,7 +454,7 @@
   content: "";
 }
 .template-gift_card .tooltip-label {
-  font-family: "SF Mono",Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: "Source Code Pro",sans-serif;
   font-style: normal;
   font-weight: 400;
   display: block;
